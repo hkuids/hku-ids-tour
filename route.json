@@ -1,0 +1,3296 @@
+{
+  "title": "HKU Station Exit A to IDS",
+  "branch": "Exit A",
+  "headingCorrections": {
+    "1": -90,
+    "2": 175,
+    "3": "per panorama"
+  },
+  "nodes": [
+    {
+      "id": "s1-001",
+      "segment": 1,
+      "time": 0,
+      "sourceTime": 0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28313202,
+      "lon": 114.136710631,
+      "quality": "estimated_start_hold",
+      "image": "images/s1-001.jpg",
+      "initialYaw": 131.79960909994884,
+      "headingOffset": -90,
+      "course": 0,
+      "northOffset": 270,
+      "headingVerified": true,
+      "previous": null,
+      "next": "s1-002",
+      "links": [
+        {
+          "target": "s1-002",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 131.79960909994884,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-002",
+      "segment": 1,
+      "time": 8,
+      "sourceTime": 8,
+      "floor": "G/F, Main Campus",
+      "lat": 22.283131854,
+      "lon": 114.136710208,
+      "quality": "recorded",
+      "image": "images/s1-002.jpg",
+      "initialYaw": -89,
+      "headingOffset": -90,
+      "course": 0,
+      "northOffset": 270,
+      "headingVerified": true,
+      "previous": "s1-001",
+      "next": "s1-003",
+      "links": [
+        {
+          "target": "s1-001",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -47.36002475205896,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s1-003",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 143.63799781757427,
+          "pitch": -16.589382042662244,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-003",
+      "segment": 1,
+      "time": 15,
+      "sourceTime": 15,
+      "floor": "G/F, Main Campus",
+      "lat": 22.283115396,
+      "lon": 114.136727853,
+      "quality": "recorded",
+      "image": "images/s1-003.jpg",
+      "initialYaw": 91.68,
+      "headingOffset": -90,
+      "course": 140.7,
+      "northOffset": 50.700000000000045,
+      "headingVerified": true,
+      "previous": "s1-002",
+      "next": "s1-004",
+      "links": [
+        {
+          "target": "s1-002",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -26.742420883548903,
+          "pitch": -21.015592861263947,
+          "verified": true
+        },
+        {
+          "target": "s1-004",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 158.27524391865313,
+          "pitch": -24.60857177705374,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-004",
+      "segment": 1,
+      "time": 20.0,
+      "sourceTime": 20.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.283090155,
+      "lon": 114.136755732,
+      "quality": "recorded",
+      "image": "images/s1-004.jpg",
+      "initialYaw": 101.32,
+      "headingOffset": -90,
+      "course": 119.19,
+      "northOffset": 29.190000000000055,
+      "headingVerified": true,
+      "previous": "s1-003",
+      "next": "s1-005",
+      "links": [
+        {
+          "target": "s1-003",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -19.853593349271023,
+          "pitch": -24.90648229973132,
+          "verified": true
+        },
+        {
+          "target": "s1-005",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 166.55803630877597,
+          "pitch": -25.85324663471544,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-005",
+      "segment": 1,
+      "time": 24,
+      "sourceTime": 24,
+      "floor": "G/F, Main Campus",
+      "lat": 22.283071015,
+      "lon": 114.136788188,
+      "quality": "recorded",
+      "image": "images/s1-005.jpg",
+      "initialYaw": 107.46000000000004,
+      "headingOffset": -90,
+      "course": 135.26,
+      "northOffset": 45.25999999999999,
+      "headingVerified": true,
+      "previous": "s1-004",
+      "next": "s1-006",
+      "links": [
+        {
+          "target": "s1-004",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -2.368236162565381,
+          "pitch": -31.8704762206919,
+          "verified": true
+        },
+        {
+          "target": "s1-006",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 179.2741278035179,
+          "pitch": -18.73489955397917,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-006",
+      "segment": 1,
+      "time": 28.0,
+      "sourceTime": 28.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28304043,
+      "lon": 114.136805234,
+      "quality": "recorded",
+      "image": "images/s1-006.jpg",
+      "initialYaw": 93.05999999999995,
+      "headingOffset": -90,
+      "course": 169.52,
+      "northOffset": 79.51999999999998,
+      "headingVerified": true,
+      "previous": "s1-005",
+      "next": "s1-007",
+      "links": [
+        {
+          "target": "s1-005",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 12.771687306573767,
+          "pitch": -27.957251658518942,
+          "verified": true
+        },
+        {
+          "target": "s1-007",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 170.48767328932502,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-007",
+      "segment": 1,
+      "time": 30,
+      "sourceTime": 30,
+      "floor": "G/F, Main Campus",
+      "lat": 22.283017667,
+      "lon": 114.136808437,
+      "quality": "recorded",
+      "image": "images/s1-007.jpg",
+      "initialYaw": 94.27999999999997,
+      "headingOffset": -90,
+      "course": 178.39,
+      "northOffset": 88.38999999999999,
+      "headingVerified": true,
+      "previous": "s1-006",
+      "next": "s1-008",
+      "links": [
+        {
+          "target": "s1-006",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 19.23129476494978,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s1-008",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 176.39255970589647,
+          "pitch": -20.515490191165767,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-008",
+      "segment": 1,
+      "time": 34.0,
+      "sourceTime": 34.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282970308,
+      "lon": 114.136806046,
+      "quality": "recorded",
+      "image": "images/s1-008.jpg",
+      "initialYaw": 90.55999999999995,
+      "headingOffset": -90,
+      "course": 181.51,
+      "northOffset": 91.50999999999999,
+      "headingVerified": true,
+      "previous": "s1-007",
+      "next": "s1-009",
+      "links": [
+        {
+          "target": "s1-007",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 15.971615866906745,
+          "pitch": -31.90924875923501,
+          "verified": true
+        },
+        {
+          "target": "s1-009",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 168.58682571173267,
+          "pitch": -28.98068304768052,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-009",
+      "segment": 1,
+      "time": 38,
+      "sourceTime": 38,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28293805,
+      "lon": 114.136804783,
+      "quality": "recorded",
+      "image": "images/s1-009.jpg",
+      "initialYaw": 91,
+      "headingOffset": -90,
+      "course": 185.84,
+      "northOffset": 95.84000000000003,
+      "headingVerified": true,
+      "previous": "s1-008",
+      "next": "s1-010",
+      "links": [
+        {
+          "target": "s1-008",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 8.936171236183554,
+          "pitch": -24.958950235069697,
+          "verified": true
+        },
+        {
+          "target": "s1-010",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 165.52720351471396,
+          "pitch": -27.24482437863341,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-010",
+      "segment": 1,
+      "time": 42,
+      "sourceTime": 42,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282906928,
+      "lon": 114.136800747,
+      "quality": "recorded",
+      "image": "images/s1-010.jpg",
+      "initialYaw": 85.98000000000002,
+      "headingOffset": -90,
+      "course": 182.52,
+      "northOffset": 92.51999999999998,
+      "headingVerified": false,
+      "previous": "s1-009",
+      "next": "s1-011",
+      "links": [
+        {
+          "target": "s1-009",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -38.432737261765965,
+          "pitch": -18.471320004831224,
+          "verified": true
+        },
+        {
+          "target": "s1-011",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 85.98000000000002,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-011",
+      "segment": 1,
+      "time": 45,
+      "sourceTime": 45,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282872989,
+      "lon": 114.136801708,
+      "quality": "recorded",
+      "image": "images/s1-011.jpg",
+      "initialYaw": 77.25999999999999,
+      "headingOffset": -90,
+      "course": 172.09,
+      "northOffset": 82.09000000000003,
+      "headingVerified": false,
+      "previous": "s1-010",
+      "next": "s1-012",
+      "links": [
+        {
+          "target": "s1-010",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -83.59000000000003,
+          "pitch": -16,
+          "verified": false
+        },
+        {
+          "target": "s1-012",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 93.97195111393216,
+          "pitch": -28.223937079474464,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-012",
+      "segment": 1,
+      "time": 49.0,
+      "sourceTime": 49.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282841672,
+      "lon": 114.136814465,
+      "quality": "recorded",
+      "image": "images/s1-012.jpg",
+      "initialYaw": 66.88999999999999,
+      "headingOffset": -90,
+      "course": 128.34,
+      "northOffset": 38.34000000000003,
+      "headingVerified": true,
+      "previous": "s1-011",
+      "next": "s1-013",
+      "links": [
+        {
+          "target": "s1-011",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -79.95361091035659,
+          "pitch": -37.16498167644679,
+          "verified": true
+        },
+        {
+          "target": "s1-013",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 91.15691364805002,
+          "pitch": -32.87538281087135,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-013",
+      "segment": 1,
+      "time": 52.0,
+      "sourceTime": 52.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282834069,
+      "lon": 114.136844643,
+      "quality": "recorded",
+      "image": "images/s1-013.jpg",
+      "initialYaw": 82.69000000000005,
+      "headingOffset": -90,
+      "course": 93.71,
+      "northOffset": 3.7100000000000364,
+      "headingVerified": true,
+      "previous": "s1-012",
+      "next": "s1-014",
+      "links": [
+        {
+          "target": "s1-012",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -80.99057742529749,
+          "pitch": -33.895546000727414,
+          "verified": true
+        },
+        {
+          "target": "s1-014",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 93.55517650881643,
+          "pitch": -25.72937298436068,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-014",
+      "segment": 1,
+      "time": 55.0,
+      "sourceTime": 55.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.2828361,
+      "lon": 114.136879518,
+      "quality": "recorded",
+      "image": "images/s1-014.jpg",
+      "initialYaw": 82,
+      "headingOffset": -90,
+      "course": 82.18,
+      "northOffset": 352.18000000000006,
+      "headingVerified": true,
+      "previous": "s1-013",
+      "next": "s1-015",
+      "links": [
+        {
+          "target": "s1-013",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -79.5611619663548,
+          "pitch": -43.44727757760019,
+          "verified": true
+        },
+        {
+          "target": "s1-015",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 93.7543687632758,
+          "pitch": -29.694783034487987,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-015",
+      "segment": 1,
+      "time": 60,
+      "sourceTime": 60,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282846141,
+      "lon": 114.136917808,
+      "quality": "recorded",
+      "image": "images/s1-015.jpg",
+      "initialYaw": 103.40999999999997,
+      "headingOffset": -90,
+      "course": 90.21,
+      "northOffset": 0.21000000000003638,
+      "headingVerified": true,
+      "previous": "s1-014",
+      "next": "s1-016",
+      "links": [
+        {
+          "target": "s1-014",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -82.40882208544838,
+          "pitch": -25.909252292997085,
+          "verified": true
+        },
+        {
+          "target": "s1-016",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 94.76162625622749,
+          "pitch": -29.96707411630602,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-016",
+      "segment": 1,
+      "time": 63.0,
+      "sourceTime": 63.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282840855,
+      "lon": 114.136941377,
+      "quality": "recorded",
+      "image": "images/s1-016.jpg",
+      "initialYaw": 85.11000000000001,
+      "headingOffset": -90,
+      "course": 101.69,
+      "northOffset": 11.690000000000055,
+      "headingVerified": true,
+      "previous": "s1-015",
+      "next": "s1-017",
+      "links": [
+        {
+          "target": "s1-015",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -88.9527950773786,
+          "pitch": -39.224967195501506,
+          "verified": true
+        },
+        {
+          "target": "s1-017",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 100.4725059122951,
+          "pitch": -36.32064692372751,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-017",
+      "segment": 1,
+      "time": 66.0,
+      "sourceTime": 66.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282837616,
+      "lon": 114.136970744,
+      "quality": "recorded",
+      "image": "images/s1-017.jpg",
+      "initialYaw": 86.04999999999995,
+      "headingOffset": -90,
+      "course": 92.85,
+      "northOffset": 2.8500000000000227,
+      "headingVerified": true,
+      "previous": "s1-016",
+      "next": "s1-018",
+      "links": [
+        {
+          "target": "s1-016",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -89.80603906775832,
+          "pitch": -41.94911954590343,
+          "verified": true
+        },
+        {
+          "target": "s1-018",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 101.43387806910005,
+          "pitch": -33.539927582033535,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-018",
+      "segment": 1,
+      "time": 69.0,
+      "sourceTime": 69.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.2828383,
+      "lon": 114.137009301,
+      "quality": "recorded",
+      "image": "images/s1-018.jpg",
+      "initialYaw": 93.02999999999997,
+      "headingOffset": -90,
+      "course": 89.52,
+      "northOffset": 359.52,
+      "headingVerified": true,
+      "previous": "s1-017",
+      "next": "s1-019",
+      "links": [
+        {
+          "target": "s1-017",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -84.19386942345989,
+          "pitch": -28.987999724615214,
+          "verified": true
+        },
+        {
+          "target": "s1-019",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 97.73332645048617,
+          "pitch": -34.70779872030104,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-019",
+      "segment": 1,
+      "time": 72.0,
+      "sourceTime": 72.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282836818,
+      "lon": 114.137045309,
+      "quality": "recorded",
+      "image": "images/s1-019.jpg",
+      "initialYaw": 87.51999999999998,
+      "headingOffset": -90,
+      "course": 93.21,
+      "northOffset": 3.2100000000000364,
+      "headingVerified": true,
+      "previous": "s1-018",
+      "next": "s1-020",
+      "links": [
+        {
+          "target": "s1-018",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -80.93719621562877,
+          "pitch": -34.47971408334888,
+          "verified": true
+        },
+        {
+          "target": "s1-020",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 96.22911075891261,
+          "pitch": -38.263614212347186,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-020",
+      "segment": 1,
+      "time": 75,
+      "sourceTime": 75,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282836416,
+      "lon": 114.137079228,
+      "quality": "recorded",
+      "image": "images/s1-020.jpg",
+      "initialYaw": 92.09000000000003,
+      "headingOffset": -90,
+      "course": 89.59,
+      "northOffset": 359.5899999999999,
+      "headingVerified": true,
+      "previous": "s1-019",
+      "next": "s1-021",
+      "links": [
+        {
+          "target": "s1-019",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -74.22957602243218,
+          "pitch": -44.77217002028047,
+          "verified": true
+        },
+        {
+          "target": "s1-021",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 92.81927791529085,
+          "pitch": -33.405952804305656,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-021",
+      "segment": 1,
+      "time": 79.0,
+      "sourceTime": 79.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.2828355,
+      "lon": 114.137112932,
+      "quality": "recorded",
+      "image": "images/s1-021.jpg",
+      "initialYaw": 87.88999999999999,
+      "headingOffset": -90,
+      "course": 94.71,
+      "northOffset": 4.710000000000036,
+      "headingVerified": true,
+      "previous": "s1-020",
+      "next": "s1-022",
+      "links": [
+        {
+          "target": "s1-020",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -74.21951395233953,
+          "pitch": -33.72673311046825,
+          "verified": true
+        },
+        {
+          "target": "s1-022",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 99.64280320988019,
+          "pitch": -38.041423260917746,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-022",
+      "segment": 1,
+      "time": 83.0,
+      "sourceTime": 83.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282833973,
+      "lon": 114.137149219,
+      "quality": "recorded",
+      "image": "images/s1-022.jpg",
+      "initialYaw": 89.50999999999999,
+      "headingOffset": -90,
+      "course": 91.18,
+      "northOffset": 1.1800000000000637,
+      "headingVerified": false,
+      "previous": "s1-021",
+      "next": "s1-023",
+      "links": [
+        {
+          "target": "s1-021",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -83.98024367784785,
+          "pitch": -34.50839744336659,
+          "verified": true
+        },
+        {
+          "target": "s1-023",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 89.50999999999999,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-024",
+      "segment": 1,
+      "time": 90,
+      "sourceTime": 90,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282832835,
+      "lon": 114.13721854,
+      "quality": "recorded",
+      "image": "images/s1-024.jpg",
+      "initialYaw": 99.89999999999998,
+      "headingOffset": -90,
+      "course": 102.05,
+      "northOffset": 12.049999999999955,
+      "headingVerified": true,
+      "previous": "s1-023",
+      "next": "s1-025",
+      "links": [
+        {
+          "target": "s1-023",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -82.93052898111398,
+          "pitch": -33.53200772790691,
+          "verified": true
+        },
+        {
+          "target": "s1-025",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 103.57894162329285,
+          "pitch": -33.007402377421165,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-025",
+      "segment": 1,
+      "time": 93.0,
+      "sourceTime": 93.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282819286,
+      "lon": 114.137254874,
+      "quality": "recorded",
+      "image": "images/s1-025.jpg",
+      "initialYaw": 85.01999999999998,
+      "headingOffset": -90,
+      "course": 112.64,
+      "northOffset": 22.639999999999986,
+      "headingVerified": true,
+      "previous": "s1-024",
+      "next": "s1-026",
+      "links": [
+        {
+          "target": "s1-024",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -80.13853086492304,
+          "pitch": -38.860414145719226,
+          "verified": true
+        },
+        {
+          "target": "s1-026",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 106.73953193118768,
+          "pitch": -39.27249097279887,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-026",
+      "segment": 1,
+      "time": 96.0,
+      "sourceTime": 96.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282810068,
+      "lon": 114.137286162,
+      "quality": "recorded",
+      "image": "images/s1-026.jpg",
+      "initialYaw": 93.80999999999995,
+      "headingOffset": -90,
+      "course": 102.88,
+      "northOffset": 12.879999999999995,
+      "headingVerified": true,
+      "previous": "s1-025",
+      "next": "s1-027",
+      "links": [
+        {
+          "target": "s1-025",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -63.19520315036368,
+          "pitch": -34.20794500591674,
+          "verified": true
+        },
+        {
+          "target": "s1-027",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 163.19166651450405,
+          "pitch": -31.97534071815764,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-027",
+      "segment": 1,
+      "time": 100.0,
+      "sourceTime": 100.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282802247,
+      "lon": 114.13731435,
+      "quality": "recorded",
+      "image": "images/s1-027.jpg",
+      "initialYaw": 88.45000000000005,
+      "headingOffset": -90,
+      "course": 126.98,
+      "northOffset": 36.98000000000002,
+      "headingVerified": true,
+      "previous": "s1-026",
+      "next": "s1-028",
+      "links": [
+        {
+          "target": "s1-026",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -15.682767486066496,
+          "pitch": -25.99989104491018,
+          "verified": true
+        },
+        {
+          "target": "s1-028",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 176.2015638667558,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-028",
+      "segment": 1,
+      "time": 102,
+      "sourceTime": 102,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282800821,
+      "lon": 114.137316516,
+      "quality": "recorded",
+      "image": "images/s1-028.jpg",
+      "initialYaw": 88.26999999999998,
+      "headingOffset": -90,
+      "course": 121.83,
+      "northOffset": 31.829999999999927,
+      "headingVerified": true,
+      "previous": "s1-027",
+      "next": "s1-029",
+      "links": [
+        {
+          "target": "s1-027",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -4.466663911305318,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s1-029",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 146.692931633002,
+          "pitch": -29.486054463913725,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-029",
+      "segment": 1,
+      "time": 106.0,
+      "sourceTime": 106.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282786792,
+      "lon": 114.137342675,
+      "quality": "recorded",
+      "image": "images/s1-029.jpg",
+      "initialYaw": 93.72000000000003,
+      "headingOffset": -90,
+      "course": 124.11,
+      "northOffset": 34.110000000000014,
+      "headingVerified": false,
+      "previous": "s1-028",
+      "next": "s1-030",
+      "links": [
+        {
+          "target": "s1-028",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -54.312521101369384,
+          "pitch": -33.653543204481096,
+          "verified": true
+        },
+        {
+          "target": "s1-030",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 93.72000000000003,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-030",
+      "segment": 1,
+      "time": 110,
+      "sourceTime": 110,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28276204,
+      "lon": 114.13737712,
+      "quality": "recorded",
+      "image": "images/s1-030.jpg",
+      "initialYaw": 85.62,
+      "headingOffset": -90,
+      "course": 122.75,
+      "northOffset": 32.75,
+      "headingVerified": true,
+      "previous": "s1-029",
+      "next": "s1-031",
+      "links": [
+        {
+          "target": "s1-029",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -66.46381639105186,
+          "pitch": -28.97675127623959,
+          "verified": true
+        },
+        {
+          "target": "s1-031",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 100.9645847202263,
+          "pitch": -43.10618136360552,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-031",
+      "segment": 1,
+      "time": 112.0,
+      "sourceTime": 112.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282750824,
+      "lon": 114.137399563,
+      "quality": "recorded",
+      "image": "images/s1-031.jpg",
+      "initialYaw": 89.32999999999993,
+      "headingOffset": -90,
+      "course": 117.32,
+      "northOffset": 27.319999999999936,
+      "headingVerified": true,
+      "previous": "s1-030",
+      "next": "s1-032",
+      "links": [
+        {
+          "target": "s1-030",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -66.86121321378806,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s1-032",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 103.47276570381598,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-032",
+      "segment": 1,
+      "time": 114.0,
+      "sourceTime": 114.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28273431,
+      "lon": 114.13743512,
+      "quality": "recorded",
+      "image": "images/s1-032.jpg",
+      "initialYaw": 87.54999999999995,
+      "headingOffset": -90,
+      "course": 115.07,
+      "northOffset": 25.069999999999936,
+      "headingVerified": true,
+      "previous": "s1-031",
+      "next": "s1-033",
+      "links": [
+        {
+          "target": "s1-031",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -74.48414802746106,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s1-033",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 122.79486529883002,
+          "pitch": -36.82691987875469,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-033",
+      "segment": 1,
+      "time": 117,
+      "sourceTime": 117,
+      "floor": "G/F, Main Campus",
+      "lat": 22.28270659,
+      "lon": 114.137506999,
+      "quality": "recorded",
+      "image": "images/s1-033.jpg",
+      "initialYaw": 98.59000000000003,
+      "headingOffset": -90,
+      "course": 113.19,
+      "northOffset": 23.190000000000055,
+      "headingVerified": false,
+      "previous": "s1-032",
+      "next": "s1-034",
+      "links": [
+        {
+          "target": "s1-032",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -60.74204442627229,
+          "pitch": -31.424293721922457,
+          "verified": true
+        },
+        {
+          "target": "s1-034",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 98.59000000000003,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-034",
+      "segment": 1,
+      "time": 120.0,
+      "sourceTime": 120.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282668895,
+      "lon": 114.137572746,
+      "quality": "recorded",
+      "image": "images/s1-034.jpg",
+      "initialYaw": 93.90999999999997,
+      "headingOffset": -90,
+      "course": 130.54,
+      "northOffset": 40.539999999999964,
+      "headingVerified": true,
+      "previous": "s1-033",
+      "next": "s1-035",
+      "links": [
+        {
+          "target": "s1-033",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -39.391462488858,
+          "pitch": -35.999772908162726,
+          "verified": true
+        },
+        {
+          "target": "s1-035",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 151.008393255569,
+          "pitch": -40.15066089485555,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-035",
+      "segment": 1,
+      "time": 122,
+      "sourceTime": 122,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282633965,
+      "lon": 114.137611233,
+      "quality": "recorded",
+      "image": "images/s1-035.jpg",
+      "initialYaw": 98.40999999999997,
+      "headingOffset": -90,
+      "course": 139.88,
+      "northOffset": 49.879999999999995,
+      "headingVerified": false,
+      "previous": "s1-034",
+      "next": "s1-036",
+      "links": [
+        {
+          "target": "s1-034",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -42.50345640625028,
+          "pitch": -33.87465062701473,
+          "verified": true
+        },
+        {
+          "target": "s1-036",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 98.40999999999997,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-036",
+      "segment": 1,
+      "time": 124.0,
+      "sourceTime": 124.0,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282606527,
+      "lon": 114.137629553,
+      "quality": "recorded",
+      "image": "images/s1-036.jpg",
+      "initialYaw": 90.71000000000004,
+      "headingOffset": -90,
+      "course": 148.67,
+      "northOffset": 58.67000000000007,
+      "headingVerified": false,
+      "previous": "s1-035",
+      "next": "s1-037",
+      "links": [
+        {
+          "target": "s1-035",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -38.457749861178854,
+          "pitch": -42.659067907599194,
+          "verified": true
+        },
+        {
+          "target": "s1-037",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 90.71000000000004,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s1-037",
+      "segment": 1,
+      "time": 126,
+      "sourceTime": 126,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282591999,
+      "lon": 114.137638845,
+      "quality": "recorded",
+      "image": "images/s1-037.jpg",
+      "initialYaw": 79.50999999999999,
+      "headingOffset": -90,
+      "course": 140.88,
+      "northOffset": 50.879999999999995,
+      "headingVerified": true,
+      "previous": "s1-036",
+      "next": "s1-038",
+      "links": [
+        {
+          "target": "s1-036",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -23.812301861611786,
+          "pitch": -37.141649391955596,
+          "verified": true
+        },
+        {
+          "target": "s1-038",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -156.5412358729152,
+          "pitch": -29.422085981984033,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s1-038",
+      "segment": 1,
+      "time": 130,
+      "sourceTime": 130,
+      "floor": "G/F, Main Campus",
+      "lat": 22.282586872,
+      "lon": 114.137645357,
+      "quality": "recorded",
+      "image": "images/s1-038.jpg",
+      "initialYaw": 109.31999999999994,
+      "headingOffset": -90,
+      "course": 152.5,
+      "northOffset": 62.5,
+      "headingVerified": true,
+      "previous": "s1-037",
+      "next": "s2-001",
+      "links": [
+        {
+          "target": "s1-037",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 11.006442482120747,
+          "pitch": -29.89898447399095,
+          "verified": true
+        },
+        {
+          "target": "s2-001",
+          "role": "forward",
+          "label": "Lift to FB/F · P2",
+          "yaw": -85.56930776894876,
+          "pitch": -29.86449465676768,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "title": "Lift entrance · press FB"
+    },
+    {
+      "id": "s2-003",
+      "segment": 2,
+      "time": 6,
+      "sourceTime": 165,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282531263,
+      "lon": 114.137653139,
+      "quality": "estimated_lift_exit",
+      "image": "images/s2-003.jpg",
+      "initialYaw": -175,
+      "headingOffset": 175,
+      "course": 175.92,
+      "northOffset": 350.92,
+      "headingVerified": true,
+      "previous": "s2-002",
+      "next": "s2-004",
+      "links": [
+        {
+          "target": "s2-002",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -48.70428801595057,
+          "pitch": -35.07532298267114,
+          "verified": true
+        },
+        {
+          "target": "s2-004",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -171.94458090000558,
+          "pitch": -36.437076300439145,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "title": "Footbridge · FB/F"
+    },
+    {
+      "id": "s2-004",
+      "segment": 2,
+      "time": 9,
+      "sourceTime": 168,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282523008,
+      "lon": 114.137653775,
+      "quality": "estimated_lift_exit",
+      "image": "images/s2-004.jpg",
+      "initialYaw": 179.16,
+      "headingOffset": 175,
+      "course": 105.41,
+      "northOffset": 280.41,
+      "headingVerified": true,
+      "previous": "s2-003",
+      "next": "s2-005",
+      "links": [
+        {
+          "target": "s2-003",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 3.695603397881996,
+          "pitch": -38.617061088989914,
+          "verified": true
+        },
+        {
+          "target": "s2-005",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -172.21959523600583,
+          "pitch": -38.75552601818842,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-005",
+      "segment": 2,
+      "time": 12,
+      "sourceTime": 171,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282517503,
+      "lon": 114.137689071,
+      "quality": "recorded",
+      "image": "images/s2-005.jpg",
+      "initialYaw": -169.89,
+      "headingOffset": 175,
+      "course": 119.97,
+      "northOffset": 294.97,
+      "headingVerified": true,
+      "previous": "s2-004",
+      "next": "s2-006",
+      "links": [
+        {
+          "target": "s2-004",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 13.177630877679348,
+          "pitch": -32.33397314544703,
+          "verified": true
+        },
+        {
+          "target": "s2-006",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -163.55608958041876,
+          "pitch": -44.81125290722137,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-006",
+      "segment": 2,
+      "time": 14.0,
+      "sourceTime": 173.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282494251,
+      "lon": 114.137724856,
+      "quality": "recorded",
+      "image": "images/s2-006.jpg",
+      "initialYaw": -162.11,
+      "headingOffset": 175,
+      "course": 132.37,
+      "northOffset": 307.37,
+      "headingVerified": true,
+      "previous": "s2-005",
+      "next": "s2-007",
+      "links": [
+        {
+          "target": "s2-005",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 4.921761430185029,
+          "pitch": -42.58153339281568,
+          "verified": true
+        },
+        {
+          "target": "s2-007",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -179.3549811819231,
+          "pitch": -36.24742854965351,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-007",
+      "segment": 2,
+      "time": 17,
+      "sourceTime": 176,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282450479,
+      "lon": 114.137757663,
+      "quality": "recorded",
+      "image": "images/s2-007.jpg",
+      "initialYaw": -166.88,
+      "headingOffset": 175,
+      "course": 157.3,
+      "northOffset": 332.3,
+      "headingVerified": true,
+      "previous": "s2-006",
+      "next": "s2-008",
+      "links": [
+        {
+          "target": "s2-006",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -1.194824337961677,
+          "pitch": -37.24050995151745,
+          "verified": true
+        },
+        {
+          "target": "s2-008",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 175.58515043025454,
+          "pitch": -32.97855148211512,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-008",
+      "segment": 2,
+      "time": 20.0,
+      "sourceTime": 179.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282405308,
+      "lon": 114.137770357,
+      "quality": "recorded",
+      "image": "images/s2-008.jpg",
+      "initialYaw": -170.81,
+      "headingOffset": 175,
+      "course": 170.33,
+      "northOffset": 345.33,
+      "headingVerified": true,
+      "previous": "s2-007",
+      "next": "s2-009",
+      "links": [
+        {
+          "target": "s2-007",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 2.321766770301565,
+          "pitch": -43.7226691422199,
+          "verified": true
+        },
+        {
+          "target": "s2-009",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 176.15825187057794,
+          "pitch": -32.91256294026106,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-009",
+      "segment": 2,
+      "time": 23,
+      "sourceTime": 182,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282363986,
+      "lon": 114.137774639,
+      "quality": "recorded",
+      "image": "images/s2-009.jpg",
+      "initialYaw": -169.9,
+      "headingOffset": 175,
+      "course": 176.8,
+      "northOffset": 351.8,
+      "headingVerified": true,
+      "previous": "s2-008",
+      "next": "s2-010",
+      "links": [
+        {
+          "target": "s2-008",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -0.6332113346860524,
+          "pitch": -33.25007194942216,
+          "verified": true
+        },
+        {
+          "target": "s2-010",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 179.63037396057643,
+          "pitch": -24.79038329727618,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-010",
+      "segment": 2,
+      "time": 26.0,
+      "sourceTime": 185.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282318548,
+      "lon": 114.137773013,
+      "quality": "recorded",
+      "image": "images/s2-010.jpg",
+      "initialYaw": -175.25,
+      "headingOffset": 175,
+      "course": 183.07,
+      "northOffset": 358.07,
+      "headingVerified": false,
+      "previous": "s2-009",
+      "next": "s2-011",
+      "links": [
+        {
+          "target": "s2-009",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -2.210951543654687,
+          "pitch": -39.24984012584449,
+          "verified": true
+        },
+        {
+          "target": "s2-011",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -175.25,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-011",
+      "segment": 2,
+      "time": 28.0,
+      "sourceTime": 187.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282286736,
+      "lon": 114.137771322,
+      "quality": "recorded",
+      "image": "images/s2-011.jpg",
+      "initialYaw": 174.89,
+      "headingOffset": 175,
+      "course": 177.92,
+      "northOffset": 352.92,
+      "headingVerified": true,
+      "previous": "s2-010",
+      "next": "s2-012",
+      "links": [
+        {
+          "target": "s2-010",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -2.770716547066854,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-012",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -179.3291252259471,
+          "pitch": -34.99840565419365,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-012",
+      "segment": 2,
+      "time": 31,
+      "sourceTime": 190,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282257181,
+      "lon": 114.13777822,
+      "quality": "recorded",
+      "image": "images/s2-012.jpg",
+      "initialYaw": 179.08,
+      "headingOffset": 175,
+      "course": 161.94,
+      "northOffset": 336.94,
+      "headingVerified": true,
+      "previous": "s2-011",
+      "next": "s2-013",
+      "links": [
+        {
+          "target": "s2-011",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -1.4491386378743982,
+          "pitch": -32.40839378314589,
+          "verified": true
+        },
+        {
+          "target": "s2-013",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 179.05886706770502,
+          "pitch": -26.881176970717842,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-013",
+      "segment": 2,
+      "time": 35.0,
+      "sourceTime": 194.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282225,
+      "lon": 114.137793693,
+      "quality": "recorded",
+      "image": "images/s2-013.jpg",
+      "initialYaw": -172.7,
+      "headingOffset": 175,
+      "course": 145.77,
+      "northOffset": 320.77,
+      "headingVerified": true,
+      "previous": "s2-012",
+      "next": "s2-014",
+      "links": [
+        {
+          "target": "s2-012",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 0.36165282041974933,
+          "pitch": -29.430394368030523,
+          "verified": true
+        },
+        {
+          "target": "s2-014",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -169.00434677276428,
+          "pitch": -41.808051146957,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-014",
+      "segment": 2,
+      "time": 40,
+      "sourceTime": 199,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282186613,
+      "lon": 114.137819547,
+      "quality": "recorded",
+      "image": "images/s2-014.jpg",
+      "initialYaw": -173.01,
+      "headingOffset": 175,
+      "course": 154.22,
+      "northOffset": 329.22,
+      "headingVerified": false,
+      "previous": "s2-013",
+      "next": "s2-015",
+      "links": [
+        {
+          "target": "s2-013",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 7.781122592812267,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-015",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -173.01,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-015",
+      "segment": 2,
+      "time": 42.0,
+      "sourceTime": 201.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282166601,
+      "lon": 114.13782908,
+      "quality": "recorded",
+      "image": "images/s2-015.jpg",
+      "initialYaw": -173.9,
+      "headingOffset": 175,
+      "course": 156.99,
+      "northOffset": 331.99,
+      "headingVerified": true,
+      "previous": "s2-014",
+      "next": "s2-016",
+      "links": [
+        {
+          "target": "s2-014",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 30.13491827926009,
+          "pitch": -44.59285714898341,
+          "verified": true
+        },
+        {
+          "target": "s2-016",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -128.95034730202195,
+          "pitch": -36.19738583100779,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-016",
+      "segment": 2,
+      "time": 45.0,
+      "sourceTime": 204.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282136341,
+      "lon": 114.137842235,
+      "quality": "recorded",
+      "image": "images/s2-016.jpg",
+      "initialYaw": -172.86,
+      "headingOffset": 175,
+      "course": 159.85,
+      "northOffset": 334.85,
+      "headingVerified": true,
+      "previous": "s2-015",
+      "next": "s2-017",
+      "links": [
+        {
+          "target": "s2-015",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 48.06824122169769,
+          "pitch": -36.207582466113735,
+          "verified": true
+        },
+        {
+          "target": "s2-017",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -101.7330077165729,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-017",
+      "segment": 2,
+      "time": 47,
+      "sourceTime": 206,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282129361,
+      "lon": 114.137844687,
+      "quality": "recorded",
+      "image": "images/s2-017.jpg",
+      "initialYaw": -113.35,
+      "headingOffset": 175,
+      "course": 189.58,
+      "northOffset": 4.58,
+      "headingVerified": false,
+      "previous": "s2-016",
+      "next": "s2-018",
+      "links": [
+        {
+          "target": "s2-016",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 96.25688013284423,
+          "pitch": -43.55749627008,
+          "verified": true
+        },
+        {
+          "target": "s2-018",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -113.35,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-018",
+      "segment": 2,
+      "time": 51.0,
+      "sourceTime": 210.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282120701,
+      "lon": 114.137817147,
+      "quality": "recorded",
+      "image": "images/s2-018.jpg",
+      "initialYaw": 176.17,
+      "headingOffset": 175,
+      "course": 255.04,
+      "northOffset": 70.04,
+      "headingVerified": true,
+      "previous": "s2-017",
+      "next": "s2-019",
+      "links": [
+        {
+          "target": "s2-017",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 77.48615356953053,
+          "pitch": -33.905814516365446,
+          "verified": true
+        },
+        {
+          "target": "s2-019",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -124.73701153045545,
+          "pitch": -36.927184642354135,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-019",
+      "segment": 2,
+      "time": 54.0,
+      "sourceTime": 213.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282107921,
+      "lon": 114.137785819,
+      "quality": "recorded",
+      "image": "images/s2-019.jpg",
+      "initialYaw": 175.71,
+      "headingOffset": 175,
+      "course": 226.18,
+      "northOffset": 41.18,
+      "headingVerified": true,
+      "previous": "s2-018",
+      "next": "s2-020",
+      "links": [
+        {
+          "target": "s2-018",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 67.04526033218974,
+          "pitch": -36.56510216903474,
+          "verified": true
+        },
+        {
+          "target": "s2-020",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -122.28754870532714,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-020",
+      "segment": 2,
+      "time": 56,
+      "sourceTime": 215,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.2820849,
+      "lon": 114.137767148,
+      "quality": "recorded",
+      "image": "images/s2-020.jpg",
+      "initialYaw": -178.94,
+      "headingOffset": 175,
+      "course": 212.63,
+      "northOffset": 27.63,
+      "headingVerified": true,
+      "previous": "s2-019",
+      "next": "s2-021",
+      "links": [
+        {
+          "target": "s2-019",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 74.25602259505013,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-021",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -131.3669653748883,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-021",
+      "segment": 2,
+      "time": 58.0,
+      "sourceTime": 217.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.28205765,
+      "lon": 114.13775103,
+      "quality": "recorded",
+      "image": "images/s2-021.jpg",
+      "initialYaw": -178.7,
+      "headingOffset": 175,
+      "course": 205.17,
+      "northOffset": 20.17,
+      "headingVerified": true,
+      "previous": "s2-020",
+      "next": "s2-022",
+      "links": [
+        {
+          "target": "s2-020",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 63.19279695585794,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-022",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -128.37300078724695,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-022",
+      "segment": 2,
+      "time": 60.0,
+      "sourceTime": 219.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.282030204,
+      "lon": 114.137739366,
+      "quality": "recorded",
+      "image": "images/s2-022.jpg",
+      "initialYaw": -175.66,
+      "headingOffset": 175,
+      "course": 200.83,
+      "northOffset": 15.83,
+      "headingVerified": false,
+      "previous": "s2-021",
+      "next": "s2-023",
+      "links": [
+        {
+          "target": "s2-021",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 49.87722518483838,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-023",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -175.66,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-023",
+      "segment": 2,
+      "time": 62.0,
+      "sourceTime": 221.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.28200379,
+      "lon": 114.137728882,
+      "quality": "recorded",
+      "image": "images/s2-023.jpg",
+      "initialYaw": -173.58,
+      "headingOffset": 175,
+      "course": 200.21,
+      "northOffset": 15.21,
+      "headingVerified": true,
+      "previous": "s2-022",
+      "next": "s2-024",
+      "links": [
+        {
+          "target": "s2-022",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 54.70940614179517,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-024",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -148.86095631702278,
+          "pitch": -32.35256226117594,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-024",
+      "segment": 2,
+      "time": 66,
+      "sourceTime": 225,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281967486,
+      "lon": 114.137713325,
+      "quality": "recorded",
+      "image": "images/s2-024.jpg",
+      "initialYaw": -177.53,
+      "headingOffset": 175,
+      "course": 199.98,
+      "northOffset": 14.98,
+      "headingVerified": true,
+      "previous": "s2-023",
+      "next": "s2-025",
+      "links": [
+        {
+          "target": "s2-023",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 42.16716205354078,
+          "pitch": -31.109787191705536,
+          "verified": true
+        },
+        {
+          "target": "s2-025",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 175.82820106607278,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-025",
+      "segment": 2,
+      "time": 68.0,
+      "sourceTime": 227.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281944969,
+      "lon": 114.137705676,
+      "quality": "recorded",
+      "image": "images/s2-025.jpg",
+      "initialYaw": -174.31,
+      "headingOffset": 175,
+      "course": 198.27,
+      "northOffset": 13.27,
+      "headingVerified": true,
+      "previous": "s2-024",
+      "next": "s2-026",
+      "links": [
+        {
+          "target": "s2-024",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -4.5679432302774785,
+          "pitch": -44.910220362534794,
+          "verified": true
+        },
+        {
+          "target": "s2-026",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 165.62992357705036,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-026",
+      "segment": 2,
+      "time": 70.0,
+      "sourceTime": 229.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.28191866,
+      "lon": 114.13769591,
+      "quality": "recorded",
+      "image": "images/s2-026.jpg",
+      "initialYaw": -173.89,
+      "headingOffset": 175,
+      "course": 199.92,
+      "northOffset": 14.92,
+      "headingVerified": true,
+      "previous": "s2-025",
+      "next": "s2-027",
+      "links": [
+        {
+          "target": "s2-025",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -4.10461645469934,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-027",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -149.88888497910852,
+          "pitch": -42.176946093038765,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-027",
+      "segment": 2,
+      "time": 73,
+      "sourceTime": 232,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281881204,
+      "lon": 114.137680346,
+      "quality": "recorded",
+      "image": "images/s2-027.jpg",
+      "initialYaw": -177.89,
+      "headingOffset": 175,
+      "course": 198.64,
+      "northOffset": 13.64,
+      "headingVerified": true,
+      "previous": "s2-026",
+      "next": "s2-028",
+      "links": [
+        {
+          "target": "s2-026",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 43.47329768803672,
+          "pitch": -40.283225725404364,
+          "verified": true
+        },
+        {
+          "target": "s2-028",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -143.10642989117576,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-028",
+      "segment": 2,
+      "time": 75.0,
+      "sourceTime": 234.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281857792,
+      "lon": 114.137673211,
+      "quality": "recorded",
+      "image": "images/s2-028.jpg",
+      "initialYaw": 178.08,
+      "headingOffset": 175,
+      "course": 190.0,
+      "northOffset": 5,
+      "headingVerified": false,
+      "previous": "s2-027",
+      "next": "s2-029",
+      "links": [
+        {
+          "target": "s2-027",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 37.1036596599763,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-029",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 178.08,
+          "pitch": -16,
+          "verified": false
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-029",
+      "segment": 2,
+      "time": 77,
+      "sourceTime": 236,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281837618,
+      "lon": 114.137672038,
+      "quality": "recorded",
+      "image": "images/s2-029.jpg",
+      "initialYaw": 168.52,
+      "headingOffset": 175,
+      "course": 172.18,
+      "northOffset": 347.18,
+      "headingVerified": true,
+      "previous": "s2-028",
+      "next": "s2-030",
+      "links": [
+        {
+          "target": "s2-028",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 47.07023432653841,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-030",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -44.38405100744944,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-030",
+      "segment": 2,
+      "time": 81,
+      "sourceTime": 240,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281802126,
+      "lon": 114.137689354,
+      "quality": "recorded",
+      "image": "images/s2-030.jpg",
+      "initialYaw": -164.61,
+      "headingOffset": 175,
+      "course": 153.81,
+      "northOffset": 328.81,
+      "headingVerified": true,
+      "previous": "s2-029",
+      "next": "s2-031",
+      "links": [
+        {
+          "target": "s2-029",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 126.0193621758026,
+          "pitch": -42.56832506477504,
+          "verified": true
+        },
+        {
+          "target": "s2-031",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -37.90928721683906,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-031",
+      "segment": 2,
+      "time": 84.0,
+      "sourceTime": 243.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281775924,
+      "lon": 114.137697368,
+      "quality": "recorded",
+      "image": "images/s2-031.jpg",
+      "initialYaw": -167.44,
+      "headingOffset": 175,
+      "course": 169.77,
+      "northOffset": 344.77,
+      "headingVerified": true,
+      "previous": "s2-030",
+      "next": "s2-032",
+      "links": [
+        {
+          "target": "s2-030",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 138.9197468149165,
+          "pitch": -37.98516685817227,
+          "verified": true
+        },
+        {
+          "target": "s2-032",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -30.168854544243516,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-032",
+      "segment": 2,
+      "time": 86,
+      "sourceTime": 245,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281767071,
+      "lon": 114.137697814,
+      "quality": "recorded",
+      "image": "images/s2-032.jpg",
+      "initialYaw": 18.77,
+      "headingOffset": 175,
+      "course": 169.77,
+      "northOffset": 344.77,
+      "headingVerified": true,
+      "previous": "s2-031",
+      "next": "s2-033",
+      "links": [
+        {
+          "target": "s2-031",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 152.94125141605173,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-033",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -25.6927948748488,
+          "pitch": -42.2106906281947,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-033",
+      "segment": 2,
+      "time": 91,
+      "sourceTime": 250,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281798717,
+      "lon": 114.137699931,
+      "quality": "recorded",
+      "image": "images/s2-033.jpg",
+      "initialYaw": -178.62,
+      "headingOffset": 175,
+      "course": 7.55,
+      "northOffset": 182.55,
+      "headingVerified": true,
+      "previous": "s2-032",
+      "next": "s2-034",
+      "links": [
+        {
+          "target": "s2-032",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 143.8048591663685,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-034",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -26.52607031479181,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "title": "Graduate House · P2 junction"
+    },
+    {
+      "id": "s2-036",
+      "segment": 2,
+      "time": 99.0,
+      "sourceTime": 258.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281868818,
+      "lon": 114.137632011,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s2-036.jpg",
+      "initialYaw": -177.96,
+      "headingOffset": 175,
+      "course": 293.56,
+      "northOffset": 108.56,
+      "headingVerified": true,
+      "previous": "s2-035",
+      "next": "s2-037",
+      "links": [
+        {
+          "target": "s2-035",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 150.55563271780977,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-037",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -20.46880392241485,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s2-037",
+      "segment": 2,
+      "time": 101,
+      "sourceTime": 260,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.28188345,
+      "lon": 114.137589941,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s2-037.jpg",
+      "initialYaw": -179.62,
+      "headingOffset": 175,
+      "course": 288.37,
+      "northOffset": 103.37,
+      "headingVerified": true,
+      "previous": "s2-036",
+      "next": "s2-038",
+      "links": [
+        {
+          "target": "s2-036",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 162.43432272734208,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-038",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -23.666082445516622,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": false,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-038",
+      "segment": 2,
+      "time": 104.0,
+      "sourceTime": 263.0,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281891306,
+      "lon": 114.137555258,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s2-038.jpg",
+      "initialYaw": 178.56,
+      "headingOffset": 175,
+      "course": 279.46,
+      "northOffset": 94.46,
+      "headingVerified": true,
+      "previous": "s2-037",
+      "next": "s2-039",
+      "links": [
+        {
+          "target": "s2-037",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 162.68751512818244,
+          "pitch": -45,
+          "verified": true
+        },
+        {
+          "target": "s2-039",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -27.80471191587344,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s2-040",
+      "segment": 2,
+      "time": 110,
+      "sourceTime": 269,
+      "floor": "FB/F, Main Campus = P2, Graduate House",
+      "lat": 22.281905965,
+      "lon": 114.137561944,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s2-040.jpg",
+      "initialYaw": -150.11,
+      "headingOffset": 175,
+      "course": 150.98,
+      "northOffset": 325.98,
+      "headingVerified": true,
+      "previous": "s2-039",
+      "next": "s2-041",
+      "links": [
+        {
+          "target": "s2-039",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 154.03515261823134,
+          "pitch": -30.99935606961263,
+          "verified": true
+        },
+        {
+          "target": "s2-041",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -23.189920246450242,
+          "pitch": -45,
+          "verified": true
+        }
+      ],
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s3-001",
+      "segment": 3,
+      "time": 0,
+      "sourceTime": 272,
+      "floor": "P3, Graduate House",
+      "lat": 22.281896561,
+      "lon": 114.137558856,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s3-001.jpg",
+      "initialYaw": -179,
+      "headingOffset": null,
+      "course": 217.96,
+      "northOffset": 0,
+      "headingVerified": true,
+      "previous": "s2-041",
+      "next": "s3-002",
+      "links": [
+        {
+          "target": "s2-041",
+          "role": "back",
+          "label": "Back to P2",
+          "yaw": 154.2847292672194,
+          "pitch": -45,
+          "verified": true,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-002",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": -18.024168658303097,
+          "pitch": -45,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s3-003",
+      "segment": 3,
+      "time": 4,
+      "sourceTime": 276,
+      "floor": "P3, Graduate House",
+      "lat": 22.281909623,
+      "lon": 114.137550852,
+      "quality": "recorded_indoor_position_uncertain",
+      "image": "images/s3-003.jpg",
+      "initialYaw": 56,
+      "headingOffset": null,
+      "course": 340.45,
+      "northOffset": 0,
+      "headingVerified": false,
+      "previous": "s3-002",
+      "next": "s3-004",
+      "links": [
+        {
+          "target": "s3-002",
+          "role": "back",
+          "label": "Go back",
+          "yaw": 156.7547017572133,
+          "pitch": -45,
+          "verified": true,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-004",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 56,
+          "pitch": -20,
+          "verified": false,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "title": "Graduate House · P3 junction"
+    },
+    {
+      "id": "s3-006",
+      "segment": 3,
+      "time": 10,
+      "sourceTime": 282,
+      "floor": "P3, Graduate House",
+      "lat": 22.2818778,
+      "lon": 114.137546877,
+      "quality": "estimated_indoor_drift_corrected",
+      "image": "images/s3-006.jpg",
+      "initialYaw": 72,
+      "headingOffset": null,
+      "course": 188.34,
+      "northOffset": 0,
+      "headingVerified": true,
+      "previous": "s3-005",
+      "next": "s3-008",
+      "links": [
+        {
+          "target": "s3-005",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -163.41089952124764,
+          "pitch": -45,
+          "verified": true,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-008",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 69.87938539588731,
+          "pitch": -22.576648641042997,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s3-008",
+      "segment": 3,
+      "time": 16,
+      "sourceTime": 288,
+      "floor": "P3, Graduate House",
+      "lat": 22.281826295,
+      "lon": 114.137536898,
+      "quality": "estimated_indoor_drift_corrected",
+      "image": "images/s3-008.jpg",
+      "initialYaw": 75,
+      "headingOffset": null,
+      "course": 166.34,
+      "northOffset": 0,
+      "headingVerified": false,
+      "previous": "s3-006",
+      "next": "s3-009",
+      "links": [
+        {
+          "target": "s3-006",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -110,
+          "pitch": -24,
+          "verified": false,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-009",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 66.44381220668379,
+          "pitch": -26.52184851515855,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s3-010",
+      "segment": 3,
+      "time": 22,
+      "sourceTime": 294,
+      "floor": "P3, Graduate House",
+      "lat": 22.281808655,
+      "lon": 114.137550835,
+      "quality": "estimated_indoor_drift_corrected",
+      "image": "images/s3-010.jpg",
+      "initialYaw": 18,
+      "headingOffset": null,
+      "course": 8.7,
+      "northOffset": 0,
+      "headingVerified": true,
+      "previous": "s3-009",
+      "next": "s3-011",
+      "links": [
+        {
+          "target": "s3-009",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -164.23594291192774,
+          "pitch": -43.23070733893623,
+          "verified": true,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-011",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 19.727903417774655,
+          "pitch": -31.586360008266208,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false
+    },
+    {
+      "id": "s3-011",
+      "segment": 3,
+      "time": 25,
+      "sourceTime": 297,
+      "floor": "P3, Graduate House",
+      "lat": 22.281840752,
+      "lon": 114.137550157,
+      "quality": "estimated_indoor_drift_corrected",
+      "image": "images/s3-011.jpg",
+      "initialYaw": 42,
+      "headingOffset": null,
+      "course": 358.88,
+      "northOffset": 0,
+      "headingVerified": true,
+      "previous": "s3-010",
+      "next": "s3-012",
+      "links": [
+        {
+          "target": "s3-010",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -149.86856404434548,
+          "pitch": -34.97076417054571,
+          "verified": true,
+          "placement": "visual_estimate"
+        },
+        {
+          "target": "s3-012",
+          "role": "forward",
+          "label": "Continue to P307",
+          "yaw": 39.78500984236916,
+          "pitch": -28.15890056192722,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": false,
+      "hidden": false
+    },
+    {
+      "id": "s3-014",
+      "segment": 3,
+      "time": 34,
+      "sourceTime": 306,
+      "floor": "P3, Graduate House",
+      "lat": 22.28187285,
+      "lon": 114.13754948,
+      "quality": "estimated_stationary_destination",
+      "image": "images/s3-014.jpg",
+      "initialYaw": 65,
+      "headingOffset": null,
+      "course": 358.88,
+      "northOffset": 0,
+      "headingVerified": true,
+      "previous": "s3-013",
+      "next": null,
+      "links": [
+        {
+          "target": "s3-013",
+          "role": "back",
+          "label": "Go back",
+          "yaw": -132.11939497741628,
+          "pitch": -45,
+          "verified": true,
+          "placement": "visual_estimate"
+        }
+      ],
+      "directionMethod": "visual_estimate_reviewed_against_panorama",
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "title": "HKU IDS · Office P307 entrance"
+    }
+  ],
+  "schemaVersion": 4,
+  "revision": "2026-10-06-labels",
+  "pace": "standard",
+  "routes": [
+    {
+      "id": "exit-a-p307",
+      "name": "Exit A → IDS Office P307",
+      "status": "available",
+      "nodeIds": [
+        "s1-001",
+        "s1-002",
+        "s1-003",
+        "s1-004",
+        "s1-005",
+        "s1-006",
+        "s1-007",
+        "s1-008",
+        "s1-009",
+        "s1-010",
+        "s1-011",
+        "s1-012",
+        "s1-013",
+        "s1-014",
+        "s1-015",
+        "s1-016",
+        "s1-017",
+        "s1-018",
+        "s1-019",
+        "s1-020",
+        "s1-021",
+        "s1-022",
+        "s1-024",
+        "s1-025",
+        "s1-026",
+        "s1-027",
+        "s1-028",
+        "s1-029",
+        "s1-030",
+        "s1-031",
+        "s1-032",
+        "s1-033",
+        "s1-034",
+        "s1-035",
+        "s1-036",
+        "s1-037",
+        "s1-038",
+        "s2-003",
+        "s2-004",
+        "s2-005",
+        "s2-006",
+        "s2-007",
+        "s2-008",
+        "s2-009",
+        "s2-010",
+        "s2-011",
+        "s2-012",
+        "s2-013",
+        "s2-014",
+        "s2-015",
+        "s2-016",
+        "s2-017",
+        "s2-018",
+        "s2-019",
+        "s2-020",
+        "s2-021",
+        "s2-022",
+        "s2-023",
+        "s2-024",
+        "s2-025",
+        "s2-026",
+        "s2-027",
+        "s2-028",
+        "s2-029",
+        "s2-030",
+        "s2-031",
+        "s2-032",
+        "s2-033",
+        "s2-036",
+        "s2-037",
+        "s2-038",
+        "s2-040",
+        "s3-001",
+        "s3-003",
+        "s3-006",
+        "s3-008",
+        "s3-010",
+        "s3-011",
+        "s3-014"
+      ]
+    },
+    {
+      "id": "p2-p203",
+      "name": "IDS Research Sandbox P203",
+      "status": "planned",
+      "nodeIds": []
+    },
+    {
+      "id": "p3-p603",
+      "name": "IDS Seminar Room P603",
+      "status": "planned",
+      "nodeIds": []
+    },
+    {
+      "id": "p3-p302",
+      "name": "IDS Innovation Hub P302",
+      "status": "planned",
+      "nodeIds": []
+    }
+  ],
+  "activeRoute": "exit-a-p307",
+  "junctions": [
+    {
+      "nodeId": "s2-033",
+      "name": "P2 · Choose your destination",
+      "choices": [
+        {
+          "id": "sandbox",
+          "direction": "left",
+          "label": "IDS Research Sandbox P203",
+          "routeId": "p2-p203"
+        },
+        {
+          "id": "other-ids",
+          "direction": "downstairs",
+          "label": "Other IDS premises · via P3",
+          "routeId": "exit-a-p307",
+          "target": "s2-036"
+        }
+      ]
+    },
+    {
+      "nodeId": "s3-003",
+      "name": "P3 · Choose your destination",
+      "choices": [
+        {
+          "id": "seminar",
+          "direction": "downstairs",
+          "label": "IDS Seminar Room P603",
+          "routeId": "p3-p603"
+        },
+        {
+          "id": "innovation",
+          "direction": "left",
+          "label": "IDS Innovation Hub P302",
+          "routeId": "p3-p302"
+        },
+        {
+          "id": "office",
+          "direction": "right",
+          "label": "IDS Office P307",
+          "routeId": "exit-a-p307",
+          "target": "s3-006"
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "nodeId": "s1-038",
+      "target": "s2-003",
+      "title": "Take the lift to the footbridge",
+      "instruction": "Enter the lift and press “FB” to reach the footbridge. When you leave the lift on FB/F, continue along the footbridge toward Graduate House.",
+      "button": "I’ve reached FB · continue",
+      "type": "lift"
+    }
+  ],
+  "sections": [
+    {
+      "segment": 1,
+      "heading": "Upper University Street",
+      "subtitle": "Main Campus"
+    },
+    {
+      "segment": 2,
+      "heading": "Footbridge & P2 Entrance, Graduate House",
+      "subtitle": "Main Campus"
+    },
+    {
+      "segment": 3,
+      "heading": "P3",
+      "subtitle": "Graduate House"
+    }
+  ],
+  "viewLimits": {
+    "minPitch": -55,
+    "maxPitch": 90
+  },
+  "privacyExport": {
+    "bottomMasked": true,
+    "nadirMaskPitch": -67.5,
+    "operatorMasked": true,
+    "bottomMaskColor": "#66717b",
+    "otherFacesReviewed": false
+  }
+}

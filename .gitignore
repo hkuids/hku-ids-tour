@@ -1,0 +1,6 @@
+images/
+*.jpg
+*.jpeg
+*.mp4
+*.gpx
+.DS_Store

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your HKU IDS tour · Simple steps</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font:17px/1.65 system-ui,sans-serif;color:#18324c;background:#f2f6fa}header{background:#102c47;color:white;padding:30px max(24px,calc((100vw - 850px)/2))}main{max-width:850px;margin:24px auto;padding:0 20px 50px}section{background:white;border:1px solid #dce5ec;border-radius:14px;padding:24px 30px;margin:18px 0}h1{font-size:30px;line-height:1.25;margin:0 0 10px}h2{font-size:23px;line-height:1.3}h3{font-size:18px}a{color:#13735e;text-underline-offset:3px}header a{color:#ceefdf}li{margin:12px 0}code{background:#edf2f6;padding:2px 5px;border-radius:4px;font-size:.9em}.notice{background:#e8f5ef;border-left:4px solid #26866d;padding:14px 18px}.muted{color:#53677b}.button{display:inline-block;padding:10px 18px;border-radius:7px;background:#102c47;color:white;text-decoration:none}table{width:100%;border-collapse:collapse}th,td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid #e3e8ee}@media(max-width:600px){section{padding:18px}h1{font-size:25px}body{font-size:16px}}
+  </style>
+</head>
+<body>
+<header><h1>Your Exit A → HKU IDS tour</h1><p>What is ready, how to check directions, and how to put it online.</p><a href="index.html">← Open the tour</a></header>
+<main>
+<section><h2>1. Choose how many pictures to see</h2>
+<p>Above the panorama, use <strong>Pictures per walk</strong>. <strong>Standard</strong> has 45 stops. <strong>Fewer pictures</strong> makes larger steps; <strong>Detailed</strong> shows all 79 usable pictures. You can change the choice during a walk. Turns, the lift, floor changes and destination junctions stay visible.</p>
+<p>Heavily obscured, overexposed and repeated junction pictures have been removed from this website. The original video, GPX and a backup of removed pictures are retained separately. Choosing Detailed does not bring those removed pictures back.</p>
+<a class="button" href="index.html">Open the tour</a></section>
+<section><h2>2. Skip or restore an individual picture</h2><ol>
+<li>Open <a href="console.html">Configuration console</a>.</li>
+<li>Choose <strong>Detailed</strong> if you want to review every usable picture. Walk through the stops or choose one from the list.</li>
+<li>Click <strong>Skip this picture</strong> below the viewer. The tour moves to the next available picture and connects the arrows automatically. Important turns, junctions and endpoints are protected.</li>
+<li>To undo a skip, expand <strong>Skipped pictures</strong> and click the picture’s <strong>Restore</strong> button.</li>
+<li>Choose your preferred picture density, then click <strong>Download settings</strong>. Keep this backup, or send it to me. To publish yourself, download route.json and replace that file in the GitHub repository or website hosting. <strong>Copy settings</strong> is an alternative.</li>
+</ol><p class="notice">These changes are saved in your browser. Other visitors receive the published version until the updated route.json is uploaded to your hosting. Restore settings loads a downloaded settings file in another browser.</p></section>
+<section><h2>3. Lift and destination choices</h2>
+<p>At the lift entrance, the instruction is a clickable marker directly on the panorama: <strong>Enter the lift · press “FB”</strong>, then <strong>Reach the footbridge · click to continue</strong>. Click it to resume outside the lift. There is no lift pop-up.</p>
+<table><tr><th>Junction</th><th>Direction from arrival</th><th>Destination</th></tr>
+<tr><td>P2, Graduate House</td><td>Left</td><td>IDS Research Sandbox P203 · coming soon</td></tr>
+<tr><td>P2, Graduate House</td><td>Downstairs</td><td>Other IDS premises, via P3</td></tr>
+<tr><td>P3, Graduate House</td><td>Downstairs</td><td>IDS Seminar Room P603 · coming soon</td></tr>
+<tr><td>P3, Graduate House</td><td>Left</td><td>IDS Innovation Hub P302 · coming soon</td></tr>
+<tr><td>P3, Graduate House</td><td>Right</td><td>IDS Office P307 · available</td></tr></table>
+<p>The new destinations are selectable, but the three unrecorded branches explain that their footage is coming soon. The existing recorded walk continues to P307.</p></section>
+<section><h2>4. Adjust an arrow when needed</h2><ol>
+<li>Open the direction editor and select the picture to adjust.</li>
+<li>Drag the image until the white centre crosshair points at the next path, landing or doorway.</li>
+<li>Click <strong>Save forward marker here</strong>. To adjust the return direction, aim toward the previous stop and click <strong>Save back marker here</strong>.</li>
+<li>Click <strong>Use this starting view</strong> if you want that opening view saved for this picture.</li>
+<li>Download route.json and replace that file on your hosting to publish the changes, or send me your settings file.</li></ol>
+<p>Your supplied calibration has already been applied. G/F uses your latest −90° correction, FB/F uses +175°, and P3 uses the individual directions from your saved file. Some markers in that file were still unverified; you can refine them with the same controls.</p></section>
+<section><h2>5. Change section names and arrow appearance</h2><p>Open <strong>Configuration console</strong> and choose the section to edit. Expand <strong>Section label: two lines</strong>, enter the two lines and click <strong>Save this section label</strong>. No HTML is needed.</p><p>Expand <strong>Arrow text and rotation</strong>, choose Forward or Back, edit its text, adjust the rotation slider and click <strong>Save arrow appearance</strong>. “Always show this arrow’s text” keeps its label visible without hovering. Rotation turns the symbol; the forward/back marker buttons move it to a different path.</p><p>Download route.json to publish these changes through your hosting, or send me the settings file.</p></section><section><h2>6. Add future branches with the same workflow</h2><ol>
+<li>Start recording a new 360° video at an existing shared junction. Pause briefly so the junction is easy to identify, then walk to the new destination. Keep the 2:1 panorama format.</li>
+<li>Give me the anonymized video and GPX, the start/end times, floor names, destination room and the direction to take from the junction. Indoors, also provide a floor plan or landmark descriptions if available.</li>
+<li>I extract the new pictures, remove repeats and obstructed views, and connect the route to the existing junction. Shared corridor pictures can be reused.</li>
+<li>You visually check any new directions in the editor and send back the downloaded settings.</li>
+<li>I apply the settings and update the same website. The destination’s “Coming soon” choice becomes an active route.</li></ol><p>You can add more destinations and station entrances this way without rebuilding the whole tour. The indoor overview currently shows walking order, rather than a measured floor plan.</p></section>
+<section><h2>7. Hide the device holder at the bottom</h2><p>The panorama is limited to a lower viewing edge of −55°, with a slightly downward starting view. In the console, expand <strong>Hide the bottom / device holder</strong>, change the slider and save. Markers below this limit display inside the visible area so you can still walk.</p><p>A viewing limit affects the player only. For a public tour, use pictures with the holder area permanently covered. Keep any unredacted originals in private storage. The cover follows the device holder, with a small cap at the very bottom, so surrounding floor remains visible. It does not remove faces elsewhere in the scene; those need their own check before public upload.</p></section>
+<section><h2>8. WordPress pictures + GitHub Pages tour</h2><ol>
+<li>Review the prepared picture batch before public upload. In WordPress, use <strong>Media → Add New Media File</strong> and upload the individual JPGs from the batch, together.</li>
+<li>Open one picture’s attachment details and copy its <strong>File URL</strong>. For a “-scaled.jpg” copy, use the original full-size file address. A cropped thumbnail will not work as a 360° picture.</li>
+<li>Open the <a href="console.html">Configuration console</a>. Expand <strong>WordPress picture addresses</strong>, paste one original JPG URL from the batch and click <strong>Apply this folder to all pictures</strong>. The batch must keep its filenames and be uploaded into one folder/month. Fix any renamed files using their individual URLs.</li>
+<li>The WordPress host must allow the tour to load its pictures. If a picture works directly but the tour reports an error, ask the web administrator to allow the tour’s origin in the image server’s CORS response header, or host the tour on the same WordPress origin.</li>
+<li>Create a public GitHub repository named <strong>hku-ids-tour</strong>. Upload only the contents of the software package. The pictures remain on WordPress.</li>
+<li>Download <strong>route.json to publish</strong> from the console and replace route.json in GitHub. Commit the update.</li>
+<li>In the repository, open <strong>Settings → Pages</strong>. Select <strong>Deploy from a branch</strong>, then <strong>main</strong> and <strong>/(root)</strong>, and save. GitHub shows the public website address when the deployment is ready.</li>
+<li>Open <a href="elementor.html">the Elementor block generator</a>, enter that public website address, copy the block, and paste it into an <strong>HTML</strong> widget on your Elementor page. Update the page and check it in a private/incognito window.</li>
+</ol><p class="notice">The console previews and downloads your configuration. It has no server-side Publish button. Only an authenticated GitHub/hosting editor can change the live tour. Future branch updates replace the configuration and add their pictures; the WordPress embed address stays the same.</p><p>Our JPGs are 4096 × 2048. WordPress normally creates a smaller copy above 2560 pixels; use the original upload. Your WordPress administrator can help if the original address is not shown.</p><p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">GitHub Pages setup</a> · <a href="https://elementor.com/help/html-widget/">Elementor HTML widget</a> · <a href="https://developer.wordpress.org/reference/hooks/big_image_size_threshold/">WordPress image resizing</a></p></section>
+<section><h2>9. Host everything on an HKU web server instead</h2><p>The portable package contains the tour software and its pictures. Give it to your web administrator to host together. This avoids cross-site image loading and can support an authenticated administration console later. Embed that public tour address with the same Elementor block generator.</p><p>Pannellum runs from a local copy included with the tour. No Pano Mapper subscription or external viewer CDN is required for this version.</p></section>
+</main></body></html>
