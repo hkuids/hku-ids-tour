@@ -88,6 +88,10 @@ function update(){
 }
 function renderJunction(){
   const junction=route.junctions.find(j=>j.nodeId===current.id);
+  const guidance=junction?.accessibility;
+  $('lift-guidance').hidden=!guidance;
+  if(guidance){$('lift-guidance-title').textContent=guidance.title;$('lift-guidance-instruction').textContent=guidance.instruction;$('lift-guidance-note').textContent=guidance.note||'';}
+  $('lift-directions').hidden=!route.junctions.some(j=>j.accessibility&&nodes.some(n=>n.id===j.nodeId));
   $('junction').hidden=!junction;$('junction-choices').replaceChildren();if(!junction)return;
   $('junction-title').textContent=junction.name;$('junction-note').textContent='Directions are from your arrival at this junction.';
   for(const choice of junction.choices){const branch=route.routes.find(r=>r.id===choice.routeId);const ready=branch&&branch.status==='available'&&branch.nodeIds.length;
@@ -114,10 +118,10 @@ $('apply-image-folder').onclick=()=>{try{
 }catch(e){$('edit-status').textContent=e.message;}};
 function renderBranchEditor(){
   const junction=route.junctions.find(j=>j.nodeId===current.id);$('branch-editor').hidden=!junction;if(!junction)return;
-  $('junction-name').value=junction.name;const list=$('branch-fields');list.replaceChildren();
+  $('junction-name').value=junction.name;$('lift-guidance-label').value=junction.accessibility?.title||'';$('lift-guidance-text').value=junction.accessibility?.instruction||'';const list=$('branch-fields');list.replaceChildren();
   for(const choice of junction.choices){const row=document.createElement('div');row.className='branch-editor-row';row.dataset.route=choice.routeId;const label=document.createElement('label');label.textContent='Destination label';const input=document.createElement('input');input.type='text';input.maxLength=120;input.value=choice.label;label.append(input);const directionLabel=document.createElement('label');directionLabel.textContent='Direction';const select=document.createElement('select');for(const [value,text]of Object.entries({left:'Left',right:'Right',downstairs:'Downstairs',straight:'Straight ahead'})){const option=document.createElement('option');option.value=value;option.textContent=text;select.append(option);}select.value=choice.direction;directionLabel.append(select);row.append(label,directionLabel);list.append(row);}
 }
-$('save-junction').onclick=()=>{const junction=route.junctions.find(j=>j.nodeId===current.id);if(!junction)return;const name=$('junction-name').value.trim();const rows=[...$('branch-fields').children];if(!name||rows.some(row=>!row.querySelector('input').value.trim())){$('edit-status').textContent='Enter the junction name and every destination label.';return;}junction.name=name.slice(0,120);for(const row of rows){const choice=junction.choices.find(c=>c.routeId===row.dataset.route);choice.label=row.querySelector('input').value.trim().slice(0,120);choice.direction=row.querySelector('select').value;}persist();refreshScene(current);rebuild();$('edit-status').textContent='Junction labels and directions saved. New footage is needed to open the planned destinations.';};
+$('save-junction').onclick=()=>{const junction=route.junctions.find(j=>j.nodeId===current.id);if(!junction)return;const name=$('junction-name').value.trim();const rows=[...$('branch-fields').children];if(!name||rows.some(row=>!row.querySelector('input').value.trim())){$('edit-status').textContent='Enter the junction name and every destination label.';return;}junction.name=name.slice(0,120);for(const row of rows){const choice=junction.choices.find(c=>c.routeId===row.dataset.route);choice.label=row.querySelector('input').value.trim().slice(0,120);choice.direction=row.querySelector('select').value;}const title=$('lift-guidance-label').value.trim(),instruction=$('lift-guidance-text').value.trim();if(title&&instruction)junction.accessibility={...junction.accessibility,title:title.slice(0,120),instruction:instruction.slice(0,600)};else if(!title&&!instruction)delete junction.accessibility;persist();refreshScene(current);rebuild();$('edit-status').textContent='Junction choices and lift guidance saved. New footage is needed to open the planned destinations.';};
 function renderHidden(){const list=$('hidden-stops');list.replaceChildren();const hidden=route.nodes.filter(n=>n.hidden);$('hidden-count').textContent=hidden.length;
   if(!hidden.length){list.textContent='You have not skipped any additional pictures.';return;}
   for(const n of hidden){const b=document.createElement('button');b.className='secondary';b.textContent='Restore '+n.floor.split(',')[0]+' · video '+formatTime(n.sourceTime);b.onclick=()=>{n.hidden=false;persist();rebuild();$('edit-status').textContent='Picture restored. Choose Detailed to see every available picture.';};list.append(b);}
@@ -155,6 +159,7 @@ $('arrow-rotation').oninput=()=>{const angle=$('arrow-rotation').value;$('rotati
 $('save-arrow-style').onclick=()=>{const l=current.links.find(l=>l.role===$('arrow-role').value);if(!l)return;l.customLabel=$('arrow-label').value.trim().slice(0,120);l.rotation=Number($('arrow-rotation').value)%360;l.showLabel=$('arrow-visible').checked;viewer.removeHotSpot('link-'+l.role,current.id);viewer.addHotSpot(scene(current).hotSpots.find(h=>h.id==='link-'+l.role),current.id);refreshScene(current);persist();update();$('edit-status').textContent='This arrow’s text and rotation are saved. Its position is unchanged.';};
 $('save-section').onclick=()=>{const heading=$('section-heading').value.trim(),subtitle=$('section-subtitle').value.trim();if(!heading||!subtitle){$('edit-status').textContent='Enter both lines for this section.';return;}section().heading=heading.slice(0,120);section().subtitle=subtitle.slice(0,120);persist();update();$('edit-status').textContent='Both section label lines are saved.';};
 $('back').onclick=()=>walk('back');$('forward').onclick=()=>walk('forward');
+$('lift-directions').onclick=()=>{const junction=route.junctions.find(j=>j.accessibility&&nodes.some(n=>n.id===j.nodeId));if(junction)go(junction.nodeId,'forward');};
 document.querySelectorAll('[data-floor]').forEach(b=>b.onclick=()=>{const n=nodes.find(n=>n.segment===+b.dataset.floor);if(n)go(n.id);});
 $('pace').onchange=()=>{route.pace=$('pace').value;persist();rebuild();};
 $('save-forward').onclick=()=>saveMarker('forward');$('save-back').onclick=()=>saveMarker('back');
@@ -175,7 +180,7 @@ $('import-settings').onchange=async e=>{try{const file=e.target.files[0];if(!fil
 (async()=>{try{
   if(!window.pannellum)throw Error('The panorama viewer could not load. Reload the page.');
   if(window.HKU_IDS_ROUTE)route=window.HKU_IDS_ROUTE;
-  else{const res=await fetch('route.json');if(!res.ok)throw Error('The route could not load. Reload the page.');route=await res.json();}
+  else{const res=await fetch('route.json',{cache:'no-store'});if(!res.ok)throw Error('The route could not load. Reload the page.');route=await res.json();}
   let saved;try{saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('hku-ids-exit-a-settings-v3')||'null');}catch(e){}
   if(editMode&&saved&&(saved.revision===route.revision||saved.revision==='2026-10-06-curated'))try{RouteCore.accept(route,saved);}catch(e){}
   nodes=RouteCore.visible(route);byId=new Map(route.nodes.map(n=>[n.id,n]));current=nodes[0];

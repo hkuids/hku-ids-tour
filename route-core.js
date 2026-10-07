@@ -62,6 +62,11 @@ window.RouteCore={
     for(const incoming of Array.isArray(saved.junctions)?saved.junctions:[]){
       const junction=route.junctions.find(j=>j.nodeId===incoming.nodeId);if(!junction)continue;
       if(typeof incoming.name==='string'&&incoming.name.trim())junction.name=incoming.name.trim().slice(0,120);
+      if(Object.prototype.hasOwnProperty.call(incoming,'accessibility')){
+        const guide=incoming.accessibility;
+        if(guide&&typeof guide.title==='string'&&guide.title.trim()&&typeof guide.instruction==='string'&&guide.instruction.trim())junction.accessibility={title:guide.title.trim().slice(0,120),instruction:guide.instruction.trim().slice(0,600),note:typeof guide.note==='string'?guide.note.slice(0,240):''};
+        else if(guide===null)delete junction.accessibility;
+      }
       for(const c of Array.isArray(incoming.choices)?incoming.choices:[]){
         const choice=junction.choices.find(x=>x.routeId===c.routeId);if(!choice)continue;
         if(typeof c.label==='string'&&c.label.trim())choice.label=c.label.trim().slice(0,120);
@@ -70,5 +75,5 @@ window.RouteCore={
     }
     return count;
   },
-  settings(route){return{schemaVersion:4,revision:route.revision,title:route.title,branch:route.branch,pace:route.pace,viewLimits:{...route.viewLimits},sections:route.sections.map(s=>({...s})),junctions:route.junctions.map(j=>({...j,choices:j.choices.map(c=>({...c}))})),nodes:route.nodes.map(n=>({id:n.id,image:n.image,hidden:!!n.hidden,northOffset:n.northOffset,initialYaw:n.initialYaw,initialPitch:n.initialPitch,headingOffset:n.headingOffset,headingVerified:n.headingVerified,links:n.links.map(l=>({role:l.role,target:l.target,yaw:l.yaw,pitch:l.pitch,verified:l.verified,customLabel:l.customLabel||'',rotation:l.rotation??(l.role==='back'?180:0),showLabel:!!l.showLabel}))}))};}
+  settings(route){return{schemaVersion:4,revision:route.revision,title:route.title,branch:route.branch,pace:route.pace,viewLimits:{...route.viewLimits},sections:route.sections.map(s=>({...s})),junctions:route.junctions.map(j=>({...j,accessibility:j.accessibility?{...j.accessibility}:null,choices:j.choices.map(c=>({...c}))})),nodes:route.nodes.map(n=>({id:n.id,image:n.image,hidden:!!n.hidden,northOffset:n.northOffset,initialYaw:n.initialYaw,initialPitch:n.initialPitch,headingOffset:n.headingOffset,headingVerified:n.headingVerified,links:n.links.map(l=>({role:l.role,target:l.target,yaw:l.yaw,pitch:l.pitch,verified:l.verified,customLabel:l.customLabel||'',rotation:l.rotation??(l.role==='back'?180:0),showLabel:!!l.showLabel}))}))};}
 };
