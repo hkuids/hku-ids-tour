@@ -3101,7 +3101,7 @@
     }
   ],
   "schemaVersion": 4,
-  "revision": "2026-10-07-wordpress-lift-guidance",
+  "revision": "2026-10-07-wordpress-lift-guidance-v2",
   "pace": "standard",
   "routes": [
     {
@@ -3232,7 +3232,7 @@
       "accessibility": {
         "title": "Lift route · turn left toward P203",
         "instruction": "Take the lift to your destination floor instead of using these stairs.",
-        "note": "Lift-route panoramas will be added later."
+        "note": "Lift directions only · panorama route not available."
       }
     },
     {
