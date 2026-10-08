@@ -39,17 +39,19 @@ function viewHfov(){const element=$('panorama'),width=element.clientWidth||800,h
 function startingView(n,role){const ls=links(n),direction=ls.find(l=>l.role===role)||(transfer(n)?ls.find(l=>l.role==='forward'):null);return{yaw:direction?direction.yaw:n.initialYaw,pitch:Number.isFinite(n.initialPitch)?n.initialPitch:-8,hfov:viewHfov()};}
 function scene(n){const view=startingView(n),minPitch=route.viewLimits?.minPitch??-55;return{minPitch,maxPitch:90,type:'equirectangular',panorama:n.image,autoLoad:true,ignoreGPanoXMP:true,compass:!n.indoor&&n.segment<3,northOffset:n.northOffset,yaw:view.yaw,pitch:view.pitch,hfov:view.hfov,minHfov:40,
   hotSpots:markers(n).map(m=>({id:m.key,type:'info',yaw:m.yaw,pitch:Math.max(minPitch+8,m.pitch),cssClass:'walk-hotspot '+(m.role||m.kind)+(m.isLift?' lift-hotspot':''),createTooltipFunc:tooltip,createTooltipArgs:m,clickHandlerFunc:()=>activateMarker(m)}))};}
-function initViewer(){
-  if(viewer)viewer.destroy();pendingNav=false;const scenes={};for(const n of nodes)scenes[n.id]=scene(n);
+function initViewer(role){
+  if(viewer)viewer.destroy();pendingNav=true;const scenes={};for(const n of nodes)scenes[n.id]=scene(n);
+  Object.assign(scenes[current.id],startingView(current,role));
   viewer=pannellum.viewer('panorama',{default:{firstScene:current.id,autoLoad:true,sceneFadeDuration:180,showControls:true,showFullscreenCtrl:true,escapeHTML:true,hfov:viewHfov()},scenes});
-  viewer.on('scenechange',id=>{current=byId.get(id);update();});
-  viewer.on('load',()=>{pendingNav=false;viewer.setNorthOffset(current.northOffset);update();});
-  viewer.on('error',msg=>{pendingNav=false;$('viewer-error').hidden=false;$('viewer-error').textContent='This picture could not load. Reload the page or choose another stop. '+msg;});
-  viewer.on('errorcleared',()=>{$('viewer-error').hidden=true;});
+  const activeViewer=viewer;
+  viewer.on('scenechange',id=>{if(viewer!==activeViewer)return;current=byId.get(id);update();});
+  viewer.on('load',()=>{if(viewer!==activeViewer)return;pendingNav=false;viewer.setNorthOffset(current.northOffset);update();});
+  viewer.on('error',()=>{if(viewer!==activeViewer)return;pendingNav=false;$('viewer-error').hidden=false;$('viewer-error').textContent='This picture could not load. Use Reload tour to try again, or choose another stop.';});
+  viewer.on('errorcleared',()=>{if(viewer!==activeViewer)return;$('viewer-error').hidden=true;});
 }
 function go(id,role){
   const n=byId.get(id);if(!n||!nodes.includes(n)||pendingNav)return;pendingNav=true;$('viewer-error').hidden=true;current=n;
-  const view=startingView(n,role);viewer.loadScene(id,view.pitch,view.yaw,view.hfov);update();
+  const view=startingView(n,role);if(!viewer.isLoaded())initViewer(role);else viewer.loadScene(id,view.pitch,view.yaw,view.hfov);update();
 }
 function walk(role){const l=links().find(x=>x.role===role);if(!l||pendingNav)return;
   go(l.target,role);

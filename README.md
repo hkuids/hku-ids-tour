@@ -39,3 +39,7 @@ Use unique image filenames and original WordPress URLs. For another upload month
 Use [the Elementor block generator](https://hkuids.github.io/hku-ids-tour/elementor.html). Paste its iframe into an Elementor HTML widget. The embed URL stays unchanged when routes are added. This tour bundles Pannellum locally, with its license included.
 
 Deep links can start at a route/junction, for example `?route=p2-p603-lift&stop=s2-033` or `?stop=s3-003`. Add `&embed=1` for an iframe. Room links use anchors such as `#P603`; the corresponding room section IDs are installed on the WordPress premises page for automatic scrolling.
+
+## Viewer maintenance
+
+The bundled Pannellum 2.5.7 retains its upstream license. A small documented loader patch uses native anonymous-CORS images when `ignoreGPanoXMP` is enabled, avoiding failed XHR / FileReader transfers for WordPress media. It also ignores callbacks after a viewer is destroyed and stops processing unsuccessful legacy XHR responses. The tour gates walking while a scene loads. Original picture URLs and cross-origin security checks are unchanged.
