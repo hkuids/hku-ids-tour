@@ -42,4 +42,4 @@ Deep links can start at a route/junction, for example `?route=p2-p603-lift&stop=
 
 ## Viewer maintenance
 
-The bundled Pannellum 2.5.7 retains its upstream license. A small documented loader patch uses native anonymous-CORS images when `ignoreGPanoXMP` is enabled, avoiding failed XHR / FileReader transfers for WordPress media. It also ignores callbacks after a viewer is destroyed and stops processing unsuccessful legacy XHR responses. The tour gates walking while a scene loads. Original picture URLs and cross-origin security checks are unchanged.
+The bundled Pannellum 2.5.7 retains its upstream license. A small documented loader patch uses native anonymous-CORS images when `ignoreGPanoXMP` is enabled, avoiding failed XHR / FileReader transfers for WordPress media. It retries transient image failures twice with a short delay, ignores callbacks after a viewer is destroyed and stops processing unsuccessful legacy XHR responses. The tour gates walking while a scene loads. Original picture URLs and cross-origin security checks are unchanged.

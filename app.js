@@ -40,17 +40,17 @@ function startingView(n,role){const ls=links(n),direction=ls.find(l=>l.role===ro
 function scene(n){const view=startingView(n),minPitch=route.viewLimits?.minPitch??-55;return{minPitch,maxPitch:90,type:'equirectangular',panorama:n.image,autoLoad:true,ignoreGPanoXMP:true,compass:!n.indoor&&n.segment<3,northOffset:n.northOffset,yaw:view.yaw,pitch:view.pitch,hfov:view.hfov,minHfov:40,
   hotSpots:markers(n).map(m=>({id:m.key,type:'info',yaw:m.yaw,pitch:Math.max(minPitch+8,m.pitch),cssClass:'walk-hotspot '+(m.role||m.kind)+(m.isLift?' lift-hotspot':''),createTooltipFunc:tooltip,createTooltipArgs:m,clickHandlerFunc:()=>activateMarker(m)}))};}
 function initViewer(role){
-  if(viewer)viewer.destroy();pendingNav=true;const scenes={};for(const n of nodes)scenes[n.id]=scene(n);
+  if(viewer)viewer.destroy();pendingNav=true;$('panorama').setAttribute('aria-busy','true');const scenes={};for(const n of nodes)scenes[n.id]=scene(n);
   Object.assign(scenes[current.id],startingView(current,role));
   viewer=pannellum.viewer('panorama',{default:{firstScene:current.id,autoLoad:true,sceneFadeDuration:180,showControls:true,showFullscreenCtrl:true,escapeHTML:true,hfov:viewHfov()},scenes});
   const activeViewer=viewer;
   viewer.on('scenechange',id=>{if(viewer!==activeViewer)return;current=byId.get(id);update();});
-  viewer.on('load',()=>{if(viewer!==activeViewer)return;pendingNav=false;viewer.setNorthOffset(current.northOffset);update();});
-  viewer.on('error',()=>{if(viewer!==activeViewer)return;pendingNav=false;$('viewer-error').hidden=false;$('viewer-error').textContent='This picture could not load. Use Reload tour to try again, or choose another stop.';});
+  viewer.on('load',()=>{if(viewer!==activeViewer)return;pendingNav=false;$('panorama').setAttribute('aria-busy','false');viewer.setNorthOffset(current.northOffset);update();});
+  viewer.on('error',()=>{if(viewer!==activeViewer)return;pendingNav=false;$('panorama').setAttribute('aria-busy','false');$('viewer-error').hidden=false;$('viewer-error').textContent='This picture could not load. Use Reload tour to try again, or choose another stop.';});
   viewer.on('errorcleared',()=>{if(viewer!==activeViewer)return;$('viewer-error').hidden=true;});
 }
 function go(id,role){
-  const n=byId.get(id);if(!n||!nodes.includes(n)||pendingNav)return;pendingNav=true;$('viewer-error').hidden=true;current=n;
+  const n=byId.get(id);if(!n||!nodes.includes(n)||pendingNav)return;pendingNav=true;$('panorama').setAttribute('aria-busy','true');$('viewer-error').hidden=true;current=n;
   const view=startingView(n,role);if(!viewer.isLoaded())initViewer(role);else viewer.loadScene(id,view.pitch,view.yaw,view.hfov);update();
 }
 function walk(role){const l=links().find(x=>x.role===role);if(!l||pendingNav)return;
