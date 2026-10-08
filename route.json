@@ -17,7 +17,7 @@
       "lon": 114.136710631,
       "quality": "estimated_start_hold",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-001.jpg",
-      "initialYaw": 131.79960909994884,
+      "initialYaw": 143.91828943514952,
       "headingOffset": -90,
       "course": 0,
       "northOffset": 270,
@@ -29,14 +29,18 @@
           "target": "s1-002",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 131.79960909994884,
-          "pitch": -45,
-          "verified": true
+          "yaw": 143.88268524756108,
+          "pitch": -16.00357788121648,
+          "verified": true,
+          "customLabel": "Keep left towards Main Campus",
+          "rotation": 345,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -15.954158082032848
     },
     {
       "id": "s1-002",
@@ -48,7 +52,7 @@
       "lon": 114.136710208,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-002.jpg",
-      "initialYaw": -89,
+      "initialYaw": 144.96622630420165,
       "headingOffset": -90,
       "course": 0,
       "northOffset": 270,
@@ -60,9 +64,12 @@
           "target": "s1-001",
           "role": "back",
           "label": "Go back",
-          "yaw": -47.36002475205896,
-          "pitch": -45,
-          "verified": true
+          "yaw": -34.76915914340617,
+          "pitch": -24.228220307946856,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 30,
+          "showLabel": false
         },
         {
           "target": "s1-003",
@@ -71,12 +78,16 @@
           "yaw": 143.63799781757427,
           "pitch": -16.589382042662244,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -15.356630167245456
     },
     {
       "id": "s1-003",
@@ -102,7 +113,10 @@
           "label": "Go back",
           "yaw": -26.742420883548903,
           "pitch": -21.015592861263947,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-004",
@@ -110,7 +124,10 @@
           "label": "Continue to P307",
           "yaw": 158.27524391865313,
           "pitch": -24.60857177705374,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -120,14 +137,14 @@
     {
       "id": "s1-004",
       "segment": 1,
-      "time": 20.0,
-      "sourceTime": 20.0,
+      "time": 20,
+      "sourceTime": 20,
       "floor": "G/F, Main Campus",
       "lat": 22.283090155,
       "lon": 114.136755732,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-004.jpg",
-      "initialYaw": 101.32,
+      "initialYaw": 168.8111951850343,
       "headingOffset": -90,
       "course": 119.19,
       "northOffset": 29.190000000000055,
@@ -141,7 +158,10 @@
           "label": "Go back",
           "yaw": -19.853593349271023,
           "pitch": -24.90648229973132,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s1-005",
@@ -149,12 +169,16 @@
           "label": "Continue to P307",
           "yaw": 166.55803630877597,
           "pitch": -25.85324663471544,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -19.058300596501248
     },
     {
       "id": "s1-005",
@@ -180,7 +204,10 @@
           "label": "Go back",
           "yaw": -2.368236162565381,
           "pitch": -31.8704762206919,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-006",
@@ -188,7 +215,10 @@
           "label": "Continue to P307",
           "yaw": 179.2741278035179,
           "pitch": -18.73489955397917,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -198,14 +228,14 @@
     {
       "id": "s1-006",
       "segment": 1,
-      "time": 28.0,
-      "sourceTime": 28.0,
+      "time": 28,
+      "sourceTime": 28,
       "floor": "G/F, Main Campus",
       "lat": 22.28304043,
       "lon": 114.136805234,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-006.jpg",
-      "initialYaw": 93.05999999999995,
+      "initialYaw": 176.4588328376443,
       "headingOffset": -90,
       "course": 169.52,
       "northOffset": 79.51999999999998,
@@ -219,20 +249,27 @@
           "label": "Go back",
           "yaw": 12.771687306573767,
           "pitch": -27.957251658518942,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s1-007",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 170.48767328932502,
-          "pitch": -45,
-          "verified": true
+          "yaw": 173.27608788775422,
+          "pitch": -27.260460332638026,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -19.98728327446878
     },
     {
       "id": "s1-007",
@@ -258,7 +295,10 @@
           "label": "Go back",
           "yaw": 19.23129476494978,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-008",
@@ -266,7 +306,10 @@
           "label": "Continue to P307",
           "yaw": 176.39255970589647,
           "pitch": -20.515490191165767,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -276,8 +319,8 @@
     {
       "id": "s1-008",
       "segment": 1,
-      "time": 34.0,
-      "sourceTime": 34.0,
+      "time": 34,
+      "sourceTime": 34,
       "floor": "G/F, Main Campus",
       "lat": 22.282970308,
       "lon": 114.136806046,
@@ -297,7 +340,10 @@
           "label": "Go back",
           "yaw": 15.971615866906745,
           "pitch": -31.90924875923501,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-009",
@@ -305,7 +351,10 @@
           "label": "Continue to P307",
           "yaw": 168.58682571173267,
           "pitch": -28.98068304768052,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -322,7 +371,7 @@
       "lon": 114.136804783,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-009.jpg",
-      "initialYaw": 91,
+      "initialYaw": 164.5687957558697,
       "headingOffset": -90,
       "course": 185.84,
       "northOffset": 95.84000000000003,
@@ -336,7 +385,10 @@
           "label": "Go back",
           "yaw": 8.936171236183554,
           "pitch": -24.958950235069697,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s1-010",
@@ -344,12 +396,16 @@
           "label": "Continue to P307",
           "yaw": 165.52720351471396,
           "pitch": -27.24482437863341,
-          "verified": true
+          "verified": true,
+          "customLabel": "Turn left",
+          "rotation": 300,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -16.985692028243275
     },
     {
       "id": "s1-010",
@@ -361,11 +417,11 @@
       "lon": 114.136800747,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-010.jpg",
-      "initialYaw": 85.98000000000002,
+      "initialYaw": 97.72124308853313,
       "headingOffset": -90,
       "course": 182.52,
       "northOffset": 92.51999999999998,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s1-009",
       "next": "s1-011",
       "links": [
@@ -373,22 +429,29 @@
           "target": "s1-009",
           "role": "back",
           "label": "Go back",
-          "yaw": -38.432737261765965,
-          "pitch": -18.471320004831224,
-          "verified": true
+          "yaw": -29.457962180223035,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 30,
+          "showLabel": false
         },
         {
           "target": "s1-011",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 85.98000000000002,
-          "pitch": -16,
-          "verified": false
+          "yaw": 102.57119727968757,
+          "pitch": -19.25898879111047,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -13.102125921778327
     },
     {
       "id": "s1-011",
@@ -414,7 +477,10 @@
           "label": "Go back",
           "yaw": -83.59000000000003,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-012",
@@ -422,7 +488,10 @@
           "label": "Continue to P307",
           "yaw": 93.97195111393216,
           "pitch": -28.223937079474464,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -432,14 +501,14 @@
     {
       "id": "s1-012",
       "segment": 1,
-      "time": 49.0,
-      "sourceTime": 49.0,
+      "time": 49,
+      "sourceTime": 49,
       "floor": "G/F, Main Campus",
       "lat": 22.282841672,
       "lon": 114.136814465,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-012.jpg",
-      "initialYaw": 66.88999999999999,
+      "initialYaw": 93.74708213592567,
       "headingOffset": -90,
       "course": 128.34,
       "northOffset": 38.34000000000003,
@@ -453,7 +522,10 @@
           "label": "Go back",
           "yaw": -79.95361091035659,
           "pitch": -37.16498167644679,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         },
         {
           "target": "s1-013",
@@ -461,18 +533,22 @@
           "label": "Continue to P307",
           "yaw": 91.15691364805002,
           "pitch": -32.87538281087135,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -16.36151858041326
     },
     {
       "id": "s1-013",
       "segment": 1,
-      "time": 52.0,
-      "sourceTime": 52.0,
+      "time": 52,
+      "sourceTime": 52,
       "floor": "G/F, Main Campus",
       "lat": 22.282834069,
       "lon": 114.136844643,
@@ -492,7 +568,10 @@
           "label": "Go back",
           "yaw": -80.99057742529749,
           "pitch": -33.895546000727414,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-014",
@@ -500,7 +579,10 @@
           "label": "Continue to P307",
           "yaw": 93.55517650881643,
           "pitch": -25.72937298436068,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -510,8 +592,8 @@
     {
       "id": "s1-014",
       "segment": 1,
-      "time": 55.0,
-      "sourceTime": 55.0,
+      "time": 55,
+      "sourceTime": 55,
       "floor": "G/F, Main Campus",
       "lat": 22.2828361,
       "lon": 114.136879518,
@@ -531,7 +613,10 @@
           "label": "Go back",
           "yaw": -79.5611619663548,
           "pitch": -43.44727757760019,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-015",
@@ -539,7 +624,10 @@
           "label": "Continue to P307",
           "yaw": 93.7543687632758,
           "pitch": -29.694783034487987,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -556,7 +644,7 @@
       "lon": 114.136917808,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-015.jpg",
-      "initialYaw": 103.40999999999997,
+      "initialYaw": 102.98370736703168,
       "headingOffset": -90,
       "course": 90.21,
       "northOffset": 0.21000000000003638,
@@ -570,7 +658,10 @@
           "label": "Go back",
           "yaw": -82.40882208544838,
           "pitch": -25.909252292997085,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s1-016",
@@ -578,18 +669,22 @@
           "label": "Continue to P307",
           "yaw": 94.76162625622749,
           "pitch": -29.96707411630602,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -13.010640712596288
     },
     {
       "id": "s1-016",
       "segment": 1,
-      "time": 63.0,
-      "sourceTime": 63.0,
+      "time": 63,
+      "sourceTime": 63,
       "floor": "G/F, Main Campus",
       "lat": 22.282840855,
       "lon": 114.136941377,
@@ -609,7 +704,10 @@
           "label": "Go back",
           "yaw": -88.9527950773786,
           "pitch": -39.224967195501506,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-017",
@@ -617,7 +715,10 @@
           "label": "Continue to P307",
           "yaw": 100.4725059122951,
           "pitch": -36.32064692372751,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -627,14 +728,14 @@
     {
       "id": "s1-017",
       "segment": 1,
-      "time": 66.0,
-      "sourceTime": 66.0,
+      "time": 66,
+      "sourceTime": 66,
       "floor": "G/F, Main Campus",
       "lat": 22.282837616,
       "lon": 114.136970744,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-017.jpg",
-      "initialYaw": 86.04999999999995,
+      "initialYaw": 92.9553673431949,
       "headingOffset": -90,
       "course": 92.85,
       "northOffset": 2.8500000000000227,
@@ -648,7 +749,10 @@
           "label": "Go back",
           "yaw": -89.80603906775832,
           "pitch": -41.94911954590343,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s1-018",
@@ -656,18 +760,22 @@
           "label": "Continue to P307",
           "yaw": 101.43387806910005,
           "pitch": -33.539927582033535,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -15.86445200910235
     },
     {
       "id": "s1-018",
       "segment": 1,
-      "time": 69.0,
-      "sourceTime": 69.0,
+      "time": 69,
+      "sourceTime": 69,
       "floor": "G/F, Main Campus",
       "lat": 22.2828383,
       "lon": 114.137009301,
@@ -687,7 +795,10 @@
           "label": "Go back",
           "yaw": -84.19386942345989,
           "pitch": -28.987999724615214,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-019",
@@ -695,7 +806,10 @@
           "label": "Continue to P307",
           "yaw": 97.73332645048617,
           "pitch": -34.70779872030104,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -705,8 +819,8 @@
     {
       "id": "s1-019",
       "segment": 1,
-      "time": 72.0,
-      "sourceTime": 72.0,
+      "time": 72,
+      "sourceTime": 72,
       "floor": "G/F, Main Campus",
       "lat": 22.282836818,
       "lon": 114.137045309,
@@ -726,7 +840,10 @@
           "label": "Go back",
           "yaw": -80.93719621562877,
           "pitch": -34.47971408334888,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-020",
@@ -734,7 +851,10 @@
           "label": "Continue to P307",
           "yaw": 96.22911075891261,
           "pitch": -38.263614212347186,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -751,7 +871,7 @@
       "lon": 114.137079228,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-020.jpg",
-      "initialYaw": 92.09000000000003,
+      "initialYaw": 98.44743701668881,
       "headingOffset": -90,
       "course": 89.59,
       "northOffset": 359.5899999999999,
@@ -763,9 +883,12 @@
           "target": "s1-019",
           "role": "back",
           "label": "Go back",
-          "yaw": -74.22957602243218,
-          "pitch": -44.77217002028047,
-          "verified": true
+          "yaw": -77.8880327322372,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s1-021",
@@ -773,18 +896,22 @@
           "label": "Continue to P307",
           "yaw": 92.81927791529085,
           "pitch": -33.405952804305656,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -17.17939436817092
     },
     {
       "id": "s1-021",
       "segment": 1,
-      "time": 79.0,
-      "sourceTime": 79.0,
+      "time": 79,
+      "sourceTime": 79,
       "floor": "G/F, Main Campus",
       "lat": 22.2828355,
       "lon": 114.137112932,
@@ -804,7 +931,10 @@
           "label": "Go back",
           "yaw": -74.21951395233953,
           "pitch": -33.72673311046825,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-022",
@@ -812,7 +942,10 @@
           "label": "Continue to P307",
           "yaw": 99.64280320988019,
           "pitch": -38.041423260917746,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -822,18 +955,18 @@
     {
       "id": "s1-022",
       "segment": 1,
-      "time": 83.0,
-      "sourceTime": 83.0,
+      "time": 83,
+      "sourceTime": 83,
       "floor": "G/F, Main Campus",
       "lat": 22.282833973,
       "lon": 114.137149219,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-022.jpg",
-      "initialYaw": 89.50999999999999,
+      "initialYaw": 97.71152474976975,
       "headingOffset": -90,
       "course": 91.18,
       "northOffset": 1.1800000000000637,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s1-021",
       "next": "s1-023",
       "links": [
@@ -841,22 +974,29 @@
           "target": "s1-021",
           "role": "back",
           "label": "Go back",
-          "yaw": -83.98024367784785,
-          "pitch": -34.50839744336659,
-          "verified": true
+          "yaw": -77.77481023965402,
+          "pitch": -26.444654627992385,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s1-023",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 89.50999999999999,
-          "pitch": -16,
-          "verified": false
+          "yaw": 97.88077054435189,
+          "pitch": -9.568397817643252,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 30,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -5.761347827271512
     },
     {
       "id": "s1-024",
@@ -882,7 +1022,10 @@
           "label": "Go back",
           "yaw": -82.93052898111398,
           "pitch": -33.53200772790691,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-025",
@@ -890,7 +1033,10 @@
           "label": "Continue to P307",
           "yaw": 103.57894162329285,
           "pitch": -33.007402377421165,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -900,8 +1046,8 @@
     {
       "id": "s1-025",
       "segment": 1,
-      "time": 93.0,
-      "sourceTime": 93.0,
+      "time": 93,
+      "sourceTime": 93,
       "floor": "G/F, Main Campus",
       "lat": 22.282819286,
       "lon": 114.137254874,
@@ -919,9 +1065,12 @@
           "target": "s1-024",
           "role": "back",
           "label": "Go back",
-          "yaw": -80.13853086492304,
-          "pitch": -38.860414145719226,
-          "verified": true
+          "yaw": -75.73283136805799,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s1-026",
@@ -929,24 +1078,27 @@
           "label": "Continue to P307",
           "yaw": 106.73953193118768,
           "pitch": -39.27249097279887,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "s1-026",
       "segment": 1,
-      "time": 96.0,
-      "sourceTime": 96.0,
+      "time": 96,
+      "sourceTime": 96,
       "floor": "G/F, Main Campus",
       "lat": 22.282810068,
       "lon": 114.137286162,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-026.jpg",
-      "initialYaw": 93.80999999999995,
+      "initialYaw": 133.1534654909991,
       "headingOffset": -90,
       "course": 102.88,
       "northOffset": 12.879999999999995,
@@ -960,32 +1112,39 @@
           "label": "Go back",
           "yaw": -63.19520315036368,
           "pitch": -34.20794500591674,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s1-027",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 163.19166651450405,
-          "pitch": -31.97534071815764,
-          "verified": true
+          "yaw": 167.97464341184377,
+          "pitch": -20.473209815777366,
+          "verified": true,
+          "customLabel": "Turn right",
+          "rotation": 30,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -15.247001865427821
     },
     {
       "id": "s1-027",
       "segment": 1,
-      "time": 100.0,
-      "sourceTime": 100.0,
+      "time": 100,
+      "sourceTime": 100,
       "floor": "G/F, Main Campus",
       "lat": 22.282802247,
       "lon": 114.13731435,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-027.jpg",
-      "initialYaw": 88.45000000000005,
+      "initialYaw": -178.92607226000382,
       "headingOffset": -90,
       "course": 126.98,
       "northOffset": 36.98000000000002,
@@ -997,22 +1156,29 @@
           "target": "s1-026",
           "role": "back",
           "label": "Go back",
-          "yaw": -15.682767486066496,
-          "pitch": -25.99989104491018,
-          "verified": true
+          "yaw": 1.8513084903443087,
+          "pitch": -25.9256556249084,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 285,
+          "showLabel": false
         },
         {
           "target": "s1-028",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 176.2015638667558,
-          "pitch": -45,
-          "verified": true
+          "yaw": -179.4665892967596,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "Turn left",
+          "rotation": 285,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -14.119599968996477
     },
     {
       "id": "s1-028",
@@ -1038,7 +1204,10 @@
           "label": "Go back",
           "yaw": -4.466663911305318,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-029",
@@ -1046,7 +1215,10 @@
           "label": "Continue to P307",
           "yaw": 146.692931633002,
           "pitch": -29.486054463913725,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1056,18 +1228,18 @@
     {
       "id": "s1-029",
       "segment": 1,
-      "time": 106.0,
-      "sourceTime": 106.0,
+      "time": 106,
+      "sourceTime": 106,
       "floor": "G/F, Main Campus",
       "lat": 22.282786792,
       "lon": 114.137342675,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-029.jpg",
-      "initialYaw": 93.72000000000003,
+      "initialYaw": 120.44327468702227,
       "headingOffset": -90,
       "course": 124.11,
       "northOffset": 34.110000000000014,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s1-028",
       "next": "s1-030",
       "links": [
@@ -1077,20 +1249,27 @@
           "label": "Go back",
           "yaw": -54.312521101369384,
           "pitch": -33.653543204481096,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 60,
+          "showLabel": false
         },
         {
           "target": "s1-030",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 93.72000000000003,
-          "pitch": -16,
-          "verified": false
+          "yaw": 106.28877423925178,
+          "pitch": -16.586807780885728,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -10.903603524646096
     },
     {
       "id": "s1-030",
@@ -1116,7 +1295,10 @@
           "label": "Go back",
           "yaw": -66.46381639105186,
           "pitch": -28.97675127623959,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-031",
@@ -1124,18 +1306,21 @@
           "label": "Continue to P307",
           "yaw": 100.9645847202263,
           "pitch": -43.10618136360552,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "s1-031",
       "segment": 1,
-      "time": 112.0,
-      "sourceTime": 112.0,
+      "time": 112,
+      "sourceTime": 112,
       "floor": "G/F, Main Campus",
       "lat": 22.282750824,
       "lon": 114.137399563,
@@ -1155,7 +1340,10 @@
           "label": "Go back",
           "yaw": -66.86121321378806,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-032",
@@ -1163,7 +1351,10 @@
           "label": "Continue to P307",
           "yaw": 103.47276570381598,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1173,8 +1364,8 @@
     {
       "id": "s1-032",
       "segment": 1,
-      "time": 114.0,
-      "sourceTime": 114.0,
+      "time": 114,
+      "sourceTime": 114,
       "floor": "G/F, Main Campus",
       "lat": 22.28273431,
       "lon": 114.13743512,
@@ -1194,7 +1385,10 @@
           "label": "Go back",
           "yaw": -74.48414802746106,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-033",
@@ -1202,7 +1396,10 @@
           "label": "Continue to P307",
           "yaw": 122.79486529883002,
           "pitch": -36.82691987875469,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1219,11 +1416,11 @@
       "lon": 114.137506999,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-033.jpg",
-      "initialYaw": 98.59000000000003,
+      "initialYaw": 115.99932507588733,
       "headingOffset": -90,
       "course": 113.19,
       "northOffset": 23.190000000000055,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s1-032",
       "next": "s1-034",
       "links": [
@@ -1233,32 +1430,39 @@
           "label": "Go back",
           "yaw": -60.74204442627229,
           "pitch": -31.424293721922457,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s1-034",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 98.59000000000003,
-          "pitch": -16,
-          "verified": false
+          "yaw": 119.66014285393976,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -13.663298202536161
     },
     {
       "id": "s1-034",
       "segment": 1,
-      "time": 120.0,
-      "sourceTime": 120.0,
+      "time": 120,
+      "sourceTime": 120,
       "floor": "G/F, Main Campus",
       "lat": 22.282668895,
       "lon": 114.137572746,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-034.jpg",
-      "initialYaw": 93.90999999999997,
+      "initialYaw": 127.68759019734398,
       "headingOffset": -90,
       "course": 130.54,
       "northOffset": 40.539999999999964,
@@ -1272,20 +1476,27 @@
           "label": "Go back",
           "yaw": -39.391462488858,
           "pitch": -35.999772908162726,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 330,
+          "showLabel": false
         },
         {
           "target": "s1-035",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 151.008393255569,
-          "pitch": -40.15066089485555,
-          "verified": true
+          "yaw": 139.53873417117904,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "Turn right",
+          "rotation": 75,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -16.28210546498505
     },
     {
       "id": "s1-035",
@@ -1311,7 +1522,10 @@
           "label": "Go back",
           "yaw": -42.50345640625028,
           "pitch": -33.87465062701473,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-036",
@@ -1319,18 +1533,21 @@
           "label": "Continue to P307",
           "yaw": 98.40999999999997,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "s1-036",
       "segment": 1,
-      "time": 124.0,
-      "sourceTime": 124.0,
+      "time": 124,
+      "sourceTime": 124,
       "floor": "G/F, Main Campus",
       "lat": 22.282606527,
       "lon": 114.137629553,
@@ -1350,7 +1567,10 @@
           "label": "Go back",
           "yaw": -38.457749861178854,
           "pitch": -42.659067907599194,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s1-037",
@@ -1358,7 +1578,10 @@
           "label": "Continue to P307",
           "yaw": 90.71000000000004,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1375,7 +1598,7 @@
       "lon": 114.137638845,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-037.jpg",
-      "initialYaw": 79.50999999999999,
+      "initialYaw": -167.49214654471336,
       "headingOffset": -90,
       "course": 140.88,
       "northOffset": 50.879999999999995,
@@ -1389,7 +1612,10 @@
           "label": "Go back",
           "yaw": -23.812301861611786,
           "pitch": -37.141649391955596,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         },
         {
           "target": "s1-038",
@@ -1397,12 +1623,16 @@
           "label": "Continue to P307",
           "yaw": -156.5412358729152,
           "pitch": -29.422085981984033,
-          "verified": true
+          "verified": true,
+          "customLabel": "Take the lifts",
+          "rotation": 75,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -18.14683801412771
     },
     {
       "id": "s1-038",
@@ -1414,7 +1644,7 @@
       "lon": 114.137645357,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s1-038.jpg",
-      "initialYaw": 109.31999999999994,
+      "initialYaw": -85.08647242076466,
       "headingOffset": -90,
       "course": 152.5,
       "northOffset": 62.5,
@@ -1428,21 +1658,28 @@
           "label": "Go back",
           "yaw": 11.006442482120747,
           "pitch": -29.89898447399095,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-001",
           "role": "forward",
           "label": "Lift to FB/F · P2",
-          "yaw": -85.56930776894876,
-          "pitch": -29.86449465676768,
-          "verified": true
+          "yaw": -85.08647242076466,
+          "pitch": -23.66661224558623,
+          "verified": true,
+          "customLabel": "Enter and press “FB”",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "title": "Lift entrance · press FB"
+      "title": "Lift entrance · press FB",
+      "initialPitch": -23.66661224558623
     },
     {
       "id": "s2-003",
@@ -1454,7 +1691,7 @@
       "lon": 114.137653139,
       "quality": "estimated_lift_exit",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-003.jpg",
-      "initialYaw": -175,
+      "initialYaw": -164.1071644683463,
       "headingOffset": 175,
       "course": 175.92,
       "northOffset": 350.92,
@@ -1468,7 +1705,10 @@
           "label": "Go back",
           "yaw": -48.70428801595057,
           "pitch": -35.07532298267114,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-004",
@@ -1476,13 +1716,17 @@
           "label": "Continue to P307",
           "yaw": -171.94458090000558,
           "pitch": -36.437076300439145,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 15,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "title": "Footbridge · FB/F"
+      "title": "Footbridge · FB/F",
+      "initialPitch": -20.0357463986805
     },
     {
       "id": "s2-004",
@@ -1508,7 +1752,10 @@
           "label": "Go back",
           "yaw": 3.695603397881996,
           "pitch": -38.617061088989914,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-005",
@@ -1516,7 +1763,10 @@
           "label": "Continue to P307",
           "yaw": -172.21959523600583,
           "pitch": -38.75552601818842,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1547,7 +1797,10 @@
           "label": "Go back",
           "yaw": 13.177630877679348,
           "pitch": -32.33397314544703,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-006",
@@ -1555,7 +1808,10 @@
           "label": "Continue to P307",
           "yaw": -163.55608958041876,
           "pitch": -44.81125290722137,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1565,14 +1821,14 @@
     {
       "id": "s2-006",
       "segment": 2,
-      "time": 14.0,
-      "sourceTime": 173.0,
+      "time": 14,
+      "sourceTime": 173,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282494251,
       "lon": 114.137724856,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-006.jpg",
-      "initialYaw": -162.11,
+      "initialYaw": 171.58972649338602,
       "headingOffset": 175,
       "course": 132.37,
       "northOffset": 307.37,
@@ -1586,7 +1842,10 @@
           "label": "Go back",
           "yaw": 4.921761430185029,
           "pitch": -42.58153339281568,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-007",
@@ -1594,12 +1853,16 @@
           "label": "Continue to P307",
           "yaw": -179.3549811819231,
           "pitch": -36.24742854965351,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -18.225761381624316
     },
     {
       "id": "s2-007",
@@ -1625,7 +1888,10 @@
           "label": "Go back",
           "yaw": -1.194824337961677,
           "pitch": -37.24050995151745,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-008",
@@ -1633,7 +1899,10 @@
           "label": "Continue to P307",
           "yaw": 175.58515043025454,
           "pitch": -32.97855148211512,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1643,8 +1912,8 @@
     {
       "id": "s2-008",
       "segment": 2,
-      "time": 20.0,
-      "sourceTime": 179.0,
+      "time": 20,
+      "sourceTime": 179,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282405308,
       "lon": 114.137770357,
@@ -1664,7 +1933,10 @@
           "label": "Go back",
           "yaw": 2.321766770301565,
           "pitch": -43.7226691422199,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-009",
@@ -1672,7 +1944,10 @@
           "label": "Continue to P307",
           "yaw": 176.15825187057794,
           "pitch": -32.91256294026106,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1689,7 +1964,7 @@
       "lon": 114.137774639,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-009.jpg",
-      "initialYaw": -169.9,
+      "initialYaw": 171.15480566944132,
       "headingOffset": 175,
       "course": 176.8,
       "northOffset": 351.8,
@@ -1703,7 +1978,10 @@
           "label": "Go back",
           "yaw": -0.6332113346860524,
           "pitch": -33.25007194942216,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s2-010",
@@ -1711,18 +1989,22 @@
           "label": "Continue to P307",
           "yaw": 179.63037396057643,
           "pitch": -24.79038329727618,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -6.768023980675259
     },
     {
       "id": "s2-010",
       "segment": 2,
-      "time": 26.0,
-      "sourceTime": 185.0,
+      "time": 26,
+      "sourceTime": 185,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282318548,
       "lon": 114.137773013,
@@ -1742,7 +2024,10 @@
           "label": "Go back",
           "yaw": -2.210951543654687,
           "pitch": -39.24984012584449,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-011",
@@ -1750,7 +2035,10 @@
           "label": "Continue to P307",
           "yaw": -175.25,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1760,8 +2048,8 @@
     {
       "id": "s2-011",
       "segment": 2,
-      "time": 28.0,
-      "sourceTime": 187.0,
+      "time": 28,
+      "sourceTime": 187,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282286736,
       "lon": 114.137771322,
@@ -1781,7 +2069,10 @@
           "label": "Go back",
           "yaw": -2.770716547066854,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-012",
@@ -1789,7 +2080,10 @@
           "label": "Continue to P307",
           "yaw": -179.3291252259471,
           "pitch": -34.99840565419365,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1806,7 +2100,7 @@
       "lon": 114.13777822,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-012.jpg",
-      "initialYaw": 179.08,
+      "initialYaw": 179.1675473588533,
       "headingOffset": 175,
       "course": 161.94,
       "northOffset": 336.94,
@@ -1820,7 +2114,10 @@
           "label": "Go back",
           "yaw": -1.4491386378743982,
           "pitch": -32.40839378314589,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s2-013",
@@ -1828,18 +2125,22 @@
           "label": "Continue to P307",
           "yaw": 179.05886706770502,
           "pitch": -26.881176970717842,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -9.517809958168966
     },
     {
       "id": "s2-013",
       "segment": 2,
-      "time": 35.0,
-      "sourceTime": 194.0,
+      "time": 35,
+      "sourceTime": 194,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282225,
       "lon": 114.137793693,
@@ -1859,7 +2160,10 @@
           "label": "Go back",
           "yaw": 0.36165282041974933,
           "pitch": -29.430394368030523,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-014",
@@ -1867,7 +2171,10 @@
           "label": "Continue to P307",
           "yaw": -169.00434677276428,
           "pitch": -41.808051146957,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1884,11 +2191,11 @@
       "lon": 114.137819547,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-014.jpg",
-      "initialYaw": -173.01,
+      "initialYaw": -134.95823583547826,
       "headingOffset": 175,
       "course": 154.22,
       "northOffset": 329.22,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s2-013",
       "next": "s2-015",
       "links": [
@@ -1896,28 +2203,35 @@
           "target": "s2-013",
           "role": "back",
           "label": "Go back",
-          "yaw": 7.781122592812267,
-          "pitch": -45,
-          "verified": true
+          "yaw": 1.819189848244605,
+          "pitch": -19.048458515437442,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s2-015",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -173.01,
-          "pitch": -16,
-          "verified": false
+          "yaw": -130.0636760929484,
+          "pitch": -19.676397631960064,
+          "verified": true,
+          "customLabel": "Turn right",
+          "rotation": 60,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -7.072711423943372
     },
     {
       "id": "s2-015",
       "segment": 2,
-      "time": 42.0,
-      "sourceTime": 201.0,
+      "time": 42,
+      "sourceTime": 201,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282166601,
       "lon": 114.13782908,
@@ -1937,7 +2251,10 @@
           "label": "Go back",
           "yaw": 30.13491827926009,
           "pitch": -44.59285714898341,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-016",
@@ -1945,7 +2262,10 @@
           "label": "Continue to P307",
           "yaw": -128.95034730202195,
           "pitch": -36.19738583100779,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -1955,14 +2275,14 @@
     {
       "id": "s2-016",
       "segment": 2,
-      "time": 45.0,
-      "sourceTime": 204.0,
+      "time": 45,
+      "sourceTime": 204,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282136341,
       "lon": 114.137842235,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-016.jpg",
-      "initialYaw": -172.86,
+      "initialYaw": -126.34464159122683,
       "headingOffset": 175,
       "course": 159.85,
       "northOffset": 334.85,
@@ -1976,20 +2296,27 @@
           "label": "Go back",
           "yaw": 48.06824122169769,
           "pitch": -36.207582466113735,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-017",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -101.7330077165729,
-          "pitch": -45,
-          "verified": true
+          "yaw": -106.24477560120084,
+          "pitch": -17.28951867978339,
+          "verified": true,
+          "customLabel": "Keep right and continue",
+          "rotation": 330,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -4.661344250223374
     },
     {
       "id": "s2-017",
@@ -2015,15 +2342,21 @@
           "label": "Go back",
           "yaw": 96.25688013284423,
           "pitch": -43.55749627008,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-018",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -113.35,
+          "yaw": -113.35000000000002,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2033,8 +2366,8 @@
     {
       "id": "s2-018",
       "segment": 2,
-      "time": 51.0,
-      "sourceTime": 210.0,
+      "time": 51,
+      "sourceTime": 210,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282120701,
       "lon": 114.137817147,
@@ -2054,7 +2387,10 @@
           "label": "Go back",
           "yaw": 77.48615356953053,
           "pitch": -33.905814516365446,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-019",
@@ -2062,7 +2398,10 @@
           "label": "Continue to P307",
           "yaw": -124.73701153045545,
           "pitch": -36.927184642354135,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2072,14 +2411,14 @@
     {
       "id": "s2-019",
       "segment": 2,
-      "time": 54.0,
-      "sourceTime": 213.0,
+      "time": 54,
+      "sourceTime": 213,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282107921,
       "lon": 114.137785819,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-019.jpg",
-      "initialYaw": 175.71,
+      "initialYaw": -103.11035881072598,
       "headingOffset": 175,
       "course": 226.18,
       "northOffset": 41.18,
@@ -2091,22 +2430,29 @@
           "target": "s2-018",
           "role": "back",
           "label": "Go back",
-          "yaw": 67.04526033218974,
-          "pitch": -36.56510216903474,
-          "verified": true
+          "yaw": 82.4261237235246,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-020",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -122.28754870532714,
-          "pitch": -45,
-          "verified": true
+          "yaw": -125.49985786155867,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "initialPitch": -24.474716227530337
     },
     {
       "id": "s2-020",
@@ -2132,7 +2478,10 @@
           "label": "Go back",
           "yaw": 74.25602259505013,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-021",
@@ -2140,7 +2489,10 @@
           "label": "Continue to P307",
           "yaw": -131.3669653748883,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2150,8 +2502,8 @@
     {
       "id": "s2-021",
       "segment": 2,
-      "time": 58.0,
-      "sourceTime": 217.0,
+      "time": 58,
+      "sourceTime": 217,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.28205765,
       "lon": 114.13775103,
@@ -2171,7 +2523,10 @@
           "label": "Go back",
           "yaw": 63.19279695585794,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-022",
@@ -2179,7 +2534,10 @@
           "label": "Continue to P307",
           "yaw": -128.37300078724695,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2189,18 +2547,18 @@
     {
       "id": "s2-022",
       "segment": 2,
-      "time": 60.0,
-      "sourceTime": 219.0,
+      "time": 60,
+      "sourceTime": 219,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.282030204,
       "lon": 114.137739366,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-022.jpg",
-      "initialYaw": -175.66,
+      "initialYaw": -132.9267159101057,
       "headingOffset": 175,
       "course": 200.83,
       "northOffset": 15.83,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s2-021",
       "next": "s2-023",
       "links": [
@@ -2208,28 +2566,35 @@
           "target": "s2-021",
           "role": "back",
           "label": "Go back",
-          "yaw": 49.87722518483838,
-          "pitch": -45,
-          "verified": true
+          "yaw": 63.39298128358939,
+          "pitch": -20.078132645253184,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 45,
+          "showLabel": false
         },
         {
           "target": "s2-023",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -175.66,
-          "pitch": -16,
-          "verified": false
+          "yaw": -135.24675863597105,
+          "pitch": -23.752780481241487,
+          "verified": true,
+          "customLabel": "Turn left",
+          "rotation": 285,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -11.890244922832704
     },
     {
       "id": "s2-023",
       "segment": 2,
-      "time": 62.0,
-      "sourceTime": 221.0,
+      "time": 62,
+      "sourceTime": 221,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.28200379,
       "lon": 114.137728882,
@@ -2249,7 +2614,10 @@
           "label": "Go back",
           "yaw": 54.70940614179517,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-024",
@@ -2257,7 +2625,10 @@
           "label": "Continue to P307",
           "yaw": -148.86095631702278,
           "pitch": -32.35256226117594,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2274,7 +2645,7 @@
       "lon": 114.137713325,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-024.jpg",
-      "initialYaw": -177.53,
+      "initialYaw": -178.46198401322692,
       "headingOffset": 175,
       "course": 199.98,
       "northOffset": 14.98,
@@ -2288,26 +2659,33 @@
           "label": "Go back",
           "yaw": 42.16716205354078,
           "pitch": -31.109787191705536,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 30,
+          "showLabel": false
         },
         {
           "target": "s2-025",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 175.82820106607278,
-          "pitch": -45,
-          "verified": true
+          "yaw": 166.5864162535213,
+          "pitch": -28.55381111747027,
+          "verified": true,
+          "customLabel": "Turn right",
+          "rotation": 75,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -15.169079412689921
     },
     {
       "id": "s2-025",
       "segment": 2,
-      "time": 68.0,
-      "sourceTime": 227.0,
+      "time": 68,
+      "sourceTime": 227,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.281944969,
       "lon": 114.137705676,
@@ -2327,7 +2705,10 @@
           "label": "Go back",
           "yaw": -4.5679432302774785,
           "pitch": -44.910220362534794,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-026",
@@ -2335,7 +2716,10 @@
           "label": "Continue to P307",
           "yaw": 165.62992357705036,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2345,14 +2729,14 @@
     {
       "id": "s2-026",
       "segment": 2,
-      "time": 70.0,
-      "sourceTime": 229.0,
+      "time": 70,
+      "sourceTime": 229,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.28191866,
       "lon": 114.13769591,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-026.jpg",
-      "initialYaw": -173.89,
+      "initialYaw": -145.72844038716113,
       "headingOffset": 175,
       "course": 199.92,
       "northOffset": 14.92,
@@ -2364,22 +2748,29 @@
           "target": "s2-025",
           "role": "back",
           "label": "Go back",
-          "yaw": -4.10461645469934,
-          "pitch": -45,
-          "verified": true
+          "yaw": -9.236163379960203,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 60,
+          "showLabel": false
         },
         {
           "target": "s2-027",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -149.88888497910852,
-          "pitch": -42.176946093038765,
-          "verified": true
+          "yaw": -148.59646827711083,
+          "pitch": -34.05865375269713,
+          "verified": true,
+          "customLabel": "Go straight",
+          "rotation": 0,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -22.937843097853566
     },
     {
       "id": "s2-027",
@@ -2405,7 +2796,10 @@
           "label": "Go back",
           "yaw": 43.47329768803672,
           "pitch": -40.283225725404364,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-028",
@@ -2413,18 +2807,21 @@
           "label": "Continue to P307",
           "yaw": -143.10642989117576,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "s2-028",
       "segment": 2,
-      "time": 75.0,
-      "sourceTime": 234.0,
+      "time": 75,
+      "sourceTime": 234,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.281857792,
       "lon": 114.137673211,
@@ -2432,7 +2829,7 @@
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-028.jpg",
       "initialYaw": 178.08,
       "headingOffset": 175,
-      "course": 190.0,
+      "course": 190,
       "northOffset": 5,
       "headingVerified": false,
       "previous": "s2-027",
@@ -2444,15 +2841,21 @@
           "label": "Go back",
           "yaw": 37.1036596599763,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-029",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 178.08,
+          "yaw": 178.08000000000004,
           "pitch": -16,
-          "verified": false
+          "verified": false,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2469,7 +2872,7 @@
       "lon": 114.137672038,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-029.jpg",
-      "initialYaw": 168.52,
+      "initialYaw": -95.50516154462275,
       "headingOffset": 175,
       "course": 172.18,
       "northOffset": 347.18,
@@ -2481,22 +2884,29 @@
           "target": "s2-028",
           "role": "back",
           "label": "Go back",
-          "yaw": 47.07023432653841,
-          "pitch": -45,
-          "verified": true
+          "yaw": 52.1313673325227,
+          "pitch": -38.9895183833509,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-030",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -44.38405100744944,
-          "pitch": -45,
-          "verified": true
+          "yaw": -60.91273253020404,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "Turn right",
+          "rotation": 60,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -17.062078486089938
     },
     {
       "id": "s2-030",
@@ -2522,7 +2932,10 @@
           "label": "Go back",
           "yaw": 126.0193621758026,
           "pitch": -42.56832506477504,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-031",
@@ -2530,7 +2943,10 @@
           "label": "Continue to P307",
           "yaw": -37.90928721683906,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2541,14 +2957,14 @@
     {
       "id": "s2-031",
       "segment": 2,
-      "time": 84.0,
-      "sourceTime": 243.0,
+      "time": 84,
+      "sourceTime": 243,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.281775924,
       "lon": 114.137697368,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-031.jpg",
-      "initialYaw": -167.44,
+      "initialYaw": -30.9889555786271,
       "headingOffset": 175,
       "course": 169.77,
       "northOffset": 344.77,
@@ -2562,20 +2978,27 @@
           "label": "Go back",
           "yaw": 138.9197468149165,
           "pitch": -37.98516685817227,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-032",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -30.168854544243516,
-          "pitch": -45,
-          "verified": true
+          "yaw": -30.6744415164074,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "customLabel": "Take the entrance",
+          "rotation": 0,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -19.906348183547188
     },
     {
       "id": "s2-032",
@@ -2601,7 +3024,10 @@
           "label": "Go back",
           "yaw": 152.94125141605173,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-033",
@@ -2609,7 +3035,10 @@
           "label": "Continue to P307",
           "yaw": -25.6927948748488,
           "pitch": -42.2106906281947,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2626,7 +3055,7 @@
       "lon": 114.137699931,
       "quality": "recorded",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-033.jpg",
-      "initialYaw": -178.62,
+      "initialYaw": -26.965876930416357,
       "headingOffset": 175,
       "course": 7.55,
       "northOffset": 182.55,
@@ -2638,35 +3067,42 @@
           "target": "s2-032",
           "role": "back",
           "label": "Go back",
-          "yaw": 143.8048591663685,
-          "pitch": -45,
-          "verified": true
+          "yaw": 149.64990850870754,
+          "pitch": -20.3610222615588,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 345,
+          "showLabel": false
         },
         {
           "target": "s2-034",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -26.52607031479181,
-          "pitch": -45,
-          "verified": true
+          "yaw": -28.917664192425264,
+          "pitch": -21.579959522516646,
+          "verified": true,
+          "customLabel": "Downstairs to P3 / P6",
+          "rotation": 0,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "title": "Graduate House · P2 junction"
+      "title": "Graduate House · P2 junction",
+      "initialPitch": -7.237682319765263
     },
     {
       "id": "s2-036",
       "segment": 2,
-      "time": 99.0,
-      "sourceTime": 258.0,
+      "time": 99,
+      "sourceTime": 258,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.281868818,
       "lon": 114.137632011,
       "quality": "recorded_indoor_position_uncertain",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-036.jpg",
-      "initialYaw": -177.96,
+      "initialYaw": -31.040828277141202,
       "headingOffset": 175,
       "course": 293.56,
       "northOffset": 108.56,
@@ -2678,22 +3114,29 @@
           "target": "s2-035",
           "role": "back",
           "label": "Go back",
-          "yaw": 150.55563271780977,
-          "pitch": -45,
-          "verified": true
+          "yaw": 162.1490984223501,
+          "pitch": -39.18255669680867,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s2-037",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -20.46880392241485,
-          "pitch": -45,
-          "verified": true
+          "yaw": -34.722521769998764,
+          "pitch": -33.96213782092415,
+          "verified": true,
+          "customLabel": "Steps ahead. Please be careful.",
+          "rotation": 15,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -30.722535708650295
     },
     {
       "id": "s2-037",
@@ -2719,7 +3162,10 @@
           "label": "Go back",
           "yaw": 162.43432272734208,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-038",
@@ -2727,7 +3173,10 @@
           "label": "Continue to P307",
           "yaw": -23.666082445516622,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": false,
@@ -2737,8 +3186,8 @@
     {
       "id": "s2-038",
       "segment": 2,
-      "time": 104.0,
-      "sourceTime": 263.0,
+      "time": 104,
+      "sourceTime": 263,
       "floor": "FB/F, Main Campus = P2, Graduate House",
       "lat": 22.281891306,
       "lon": 114.137555258,
@@ -2758,7 +3207,10 @@
           "label": "Go back",
           "yaw": 162.68751512818244,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s2-039",
@@ -2766,12 +3218,15 @@
           "label": "Continue to P307",
           "yaw": -27.80471191587344,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "s2-040",
@@ -2783,7 +3238,7 @@
       "lon": 114.137561944,
       "quality": "recorded_indoor_position_uncertain",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s2-040.jpg",
-      "initialYaw": -150.11,
+      "initialYaw": -23.563587868596187,
       "headingOffset": 175,
       "course": 150.98,
       "northOffset": 325.98,
@@ -2795,22 +3250,29 @@
           "target": "s2-039",
           "role": "back",
           "label": "Go back",
-          "yaw": 154.03515261823134,
-          "pitch": -30.99935606961263,
-          "verified": true
+          "yaw": 154.75660682228204,
+          "pitch": -24.21683567544651,
+          "verified": true,
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s2-041",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -23.189920246450242,
+          "yaw": -23.20301435876877,
           "pitch": -45,
-          "verified": true
+          "verified": true,
+          "customLabel": "Reach P3",
+          "rotation": 0,
+          "showLabel": true
         }
       ],
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -29.02193774582257
     },
     {
       "id": "s3-001",
@@ -2822,7 +3284,7 @@
       "lon": 114.137558856,
       "quality": "recorded_indoor_position_uncertain",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s3-001.jpg",
-      "initialYaw": -179,
+      "initialYaw": -19.39708917164694,
       "headingOffset": null,
       "course": 217.96,
       "northOffset": 0,
@@ -2834,25 +3296,32 @@
           "target": "s2-041",
           "role": "back",
           "label": "Back to P2",
-          "yaw": 154.2847292672194,
-          "pitch": -45,
+          "yaw": 159.54846528711118,
+          "pitch": -19.074679283205555,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s3-002",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": -18.024168658303097,
+          "yaw": -22.276090382320945,
           "pitch": -45,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "Turn right to P307",
+          "rotation": 90,
+          "showLabel": true
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "initialPitch": -31.25429942705309
     },
     {
       "id": "s3-003",
@@ -2864,11 +3333,11 @@
       "lon": 114.137550852,
       "quality": "recorded_indoor_position_uncertain",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-exit-a-s3-003.jpg",
-      "initialYaw": 56,
+      "initialYaw": 52.25221620218508,
       "headingOffset": null,
       "course": 340.45,
       "northOffset": 0,
-      "headingVerified": false,
+      "headingVerified": true,
       "previous": "s3-002",
       "next": "s3-004",
       "links": [
@@ -2876,26 +3345,33 @@
           "target": "s3-002",
           "role": "back",
           "label": "Go back",
-          "yaw": 156.7547017572133,
-          "pitch": -45,
+          "yaw": 160.6100161247889,
+          "pitch": -16.068466279061475,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         },
         {
           "target": "s3-004",
           "role": "forward",
           "label": "Continue to P307",
-          "yaw": 56,
-          "pitch": -20,
-          "verified": false,
-          "placement": "visual_estimate"
+          "yaw": 52.25221620218508,
+          "pitch": -29.02193774582257,
+          "verified": true,
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 30,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "title": "Graduate House · P3 junction"
+      "title": "Graduate House · P3 junction",
+      "initialPitch": -29.02193774582257
     },
     {
       "id": "s3-006",
@@ -2922,7 +3398,10 @@
           "yaw": -163.41089952124764,
           "pitch": -45,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s3-008",
@@ -2931,7 +3410,10 @@
           "yaw": 69.87938539588731,
           "pitch": -22.576648641042997,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
@@ -2964,7 +3446,10 @@
           "yaw": -110,
           "pitch": -24,
           "verified": false,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s3-009",
@@ -2973,7 +3458,10 @@
           "yaw": 66.44381220668379,
           "pitch": -26.52184851515855,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
@@ -3006,7 +3494,10 @@
           "yaw": -164.23594291192774,
           "pitch": -43.23070733893623,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s3-011",
@@ -3015,7 +3506,10 @@
           "yaw": 19.727903417774655,
           "pitch": -31.586360008266208,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
@@ -3048,7 +3542,10 @@
           "yaw": -149.86856404434548,
           "pitch": -34.97076417054571,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         },
         {
           "target": "s3-012",
@@ -3057,7 +3554,10 @@
           "yaw": 39.78500984236916,
           "pitch": -28.15890056192722,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 0,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
@@ -3090,7 +3590,10 @@
           "yaw": -132.11939497741628,
           "pitch": -45,
           "verified": true,
-          "placement": "visual_estimate"
+          "placement": "visual_estimate",
+          "customLabel": "",
+          "rotation": 180,
+          "showLabel": false
         }
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
@@ -3101,7 +3604,7 @@
     }
   ],
   "schemaVersion": 4,
-  "revision": "2026-10-07-wordpress-lift-guidance-v2",
+  "revision": "2026-10-08T09:06:29.856Z",
   "pace": "standard",
   "routes": [
     {
@@ -3224,14 +3727,14 @@
         {
           "id": "other-ids",
           "direction": "downstairs",
-          "label": "Other IDS premises · stairs via P3",
+          "label": "Other IDS premises",
           "routeId": "exit-a-p307",
           "target": "s2-036"
         }
       ],
       "accessibility": {
-        "title": "Lift route · turn left toward P203",
-        "instruction": "Take the lift to your destination floor instead of using these stairs.",
+        "title": "P203 / lift",
+        "instruction": "Barrier-free access",
         "note": "Lift directions only · panorama route not available."
       }
     },
