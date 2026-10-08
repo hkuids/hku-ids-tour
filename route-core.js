@@ -6,28 +6,52 @@ window.RouteCore={
     if(/^images\/[a-z0-9._-]+\.jpe?g$/i.test(value))return true;
     try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)&&!u.username&&!u.password;}catch(e){return false;}
   },
+  externalUrl(value){
+    try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password;}catch(e){return false;}
+  },
+  choiceFor(route,n){
+    return route.junctions.find(j=>j.nodeId===n.id)?.choices.find(c=>c.routeId===route.activeRoute||c.routeIds?.includes(route.activeRoute));
+  },
   visible(route,pace=route.pace||'standard',routeId=route.activeRoute){
     const path=route.routes.find(r=>r.id===routeId&&r.status==='available')||route.routes[0];
     const known=new Map(route.nodes.map(n=>[n.id,n]));
-    const candidates=path.nodeIds.map(id=>known.get(id)).filter(n=>n&&!n.hidden);
+    const candidates=path.nodeIds.map(id=>known.get(id)).filter(n=>n&&!n.hidden&&!n.retired);
     if(pace==='detailed')return candidates;
     const standard=candidates.filter((n,i)=>n.protected||n.recommended||i===0||i===candidates.length-1);
     if(pace!=='fewer')return standard;
     let last;
     return standard.filter((n,i)=>{
-      const keep=n.protected||i===0||i===standard.length-1||!last||n.segment!==last.segment||n.sourceTime-last.sourceTime>=10;
+      const keep=n.protected||i===0||i===standard.length-1||!last||n.segment!==last.segment||n.sourceVideo!==last.sourceVideo||(n.walkTime??n.sourceTime)-(last.walkTime??last.sourceTime)>=10;
       if(keep)last=n;
       return keep;
     });
   },
-  links(nodes,n){
+  links(nodes,n,route){
     const i=nodes.indexOf(n);if(i<0)return[];
     return ['back','forward'].flatMap(role=>{
       const target=nodes[i+(role==='back'?-1:1)];if(!target)return[];
-      const original=n.links.find(l=>l.role===role);
+      const choice=role==='forward'&&route?this.choiceFor(route,n):null;
+      const original=choice?.marker&&!choice.useForwardMarker?{...choice.marker,role}:n.links.find(l=>l.role===role);
       if(!original)return[];
-      return [{...original,target:target.id}];
+      return [{...original,target:target.id,choiceId:choice?.id}];
     });
+  },
+  markers(route,nodes,n){
+    const markers=this.links(nodes,n,route).map(l=>({...l,key:'link-'+l.role,kind:'walk'}));
+    const active=this.choiceFor(route,n),junction=route.junctions.find(j=>j.nodeId===n.id);
+    for(const c of junction?.choices||[]){
+      if(c===active&&markers.some(m=>m.role==='forward'))continue;
+      if(!c.marker)continue;
+      markers.push({...c.marker,key:'choice-'+c.id,kind:c.url?'info':c.action==='guidance'?'guidance':'branch',choice:c,label:c.label,showLabel:c.marker.showLabel??true});
+    }
+    for(const info of n.info||[])markers.push({...info.marker,key:'info-'+info.id,kind:'info',info,label:info.label,showLabel:info.marker.showLabel??true});
+    return markers;
+  },
+  markerSource(route,n,key){
+    if(key.startsWith('choice-'))return route.junctions.find(j=>j.nodeId===n.id)?.choices.find(c=>c.id===key.slice(7))?.marker;
+    if(key.startsWith('info-'))return n.info?.find(i=>i.id===key.slice(5))?.marker;
+    const role=key.slice(5),choice=role==='forward'?this.choiceFor(route,n):null;
+    return choice?.marker&&!choice.useForwardMarker?choice.marker:n.links.find(l=>l.role===role);
   },
   accept(route,saved){
     if(!saved||!Array.isArray(saved.nodes))throw Error('Choose the downloaded route settings file.');
@@ -68,12 +92,23 @@ window.RouteCore={
         else if(guide===null)delete junction.accessibility;
       }
       for(const c of Array.isArray(incoming.choices)?incoming.choices:[]){
-        const choice=junction.choices.find(x=>x.routeId===c.routeId);if(!choice)continue;
+        const choice=junction.choices.find(x=>c.id?x.id===c.id:x.routeId===c.routeId);if(!choice)continue;
         if(typeof c.label==='string'&&c.label.trim())choice.label=c.label.trim().slice(0,120);
         if(['left','right','downstairs','straight'].includes(c.direction))choice.direction=c.direction;
+        if(this.externalUrl(c.url))choice.url=c.url;
+        if(c.marker&&choice.marker)this.acceptMarker(choice.marker,c.marker);
       }
     }
+    for(const s of saved.nodes){const n=known.get(s.id);if(!n)continue;for(const info of s.info||[]){const knownInfo=n.info?.find(i=>i.id===info.id);if(!knownInfo)continue;if(typeof info.label==='string')knownInfo.label=info.label.slice(0,120);if(this.externalUrl(info.url))knownInfo.url=info.url;if(info.marker&&knownInfo.marker)this.acceptMarker(knownInfo.marker,info.marker);}}
     return count;
   },
-  settings(route){return{schemaVersion:4,revision:route.revision,title:route.title,branch:route.branch,pace:route.pace,viewLimits:{...route.viewLimits},sections:route.sections.map(s=>({...s})),junctions:route.junctions.map(j=>({...j,accessibility:j.accessibility?{...j.accessibility}:null,choices:j.choices.map(c=>({...c}))})),nodes:route.nodes.map(n=>({id:n.id,image:n.image,hidden:!!n.hidden,northOffset:n.northOffset,initialYaw:n.initialYaw,initialPitch:n.initialPitch,headingOffset:n.headingOffset,headingVerified:n.headingVerified,links:n.links.map(l=>({role:l.role,target:l.target,yaw:l.yaw,pitch:l.pitch,verified:l.verified,customLabel:l.customLabel||'',rotation:l.rotation??(l.role==='back'?180:0),showLabel:!!l.showLabel}))}))};}
+  acceptMarker(marker,saved){
+    if(Number.isFinite(saved.yaw))marker.yaw=((saved.yaw+180)%360+360)%360-180;
+    if(Number.isFinite(saved.pitch))marker.pitch=Math.max(-85,Math.min(85,saved.pitch));
+    if(Number.isFinite(saved.rotation))marker.rotation=((saved.rotation%360)+360)%360;
+    if(typeof saved.verified==='boolean')marker.verified=saved.verified;
+    if(typeof saved.customLabel==='string')marker.customLabel=saved.customLabel.slice(0,120);
+    if(typeof saved.showLabel==='boolean')marker.showLabel=saved.showLabel;
+  },
+  settings(route){return{schemaVersion:5,revision:route.revision,title:route.title,branch:route.branch,pace:route.pace,viewLimits:{...route.viewLimits},sections:route.sections.map(s=>({...s})),junctions:JSON.parse(JSON.stringify(route.junctions)),nodes:route.nodes.map(n=>({id:n.id,image:n.image,hidden:!!n.hidden,northOffset:n.northOffset,initialYaw:n.initialYaw,initialPitch:n.initialPitch,headingOffset:n.headingOffset,headingVerified:n.headingVerified,info:n.info?JSON.parse(JSON.stringify(n.info)):undefined,links:n.links.map(l=>({role:l.role,target:l.target,yaw:l.yaw,pitch:l.pitch,verified:l.verified,customLabel:l.customLabel||'',rotation:l.rotation??(l.role==='back'?180:0),showLabel:!!l.showLabel}))}))};}
 };

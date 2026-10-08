@@ -1,28 +1,41 @@
 # HKU IDS panorama visitor guide
 
-The live visitor tour is https://hkuids.github.io/hku-ids-tour/. The console is https://hkuids.github.io/hku-ids-tour/console.html. This repository contains software and route settings only. Panorama pictures remain in WordPress Media Library; all 78 included originals are connected. Picture s2-030 is skipped because of a large blurred area.
+[Visitor tour](https://hkuids.github.io/hku-ids-tour/) · [Configuration console](https://hkuids.github.io/hku-ids-tour/console.html) · [Simple guide](https://hkuids.github.io/hku-ids-tour/guide.html)
+
+GitHub is the shared source of truth. `route.json` contains all routes, picture URLs, section names, skipped pictures and marker placements. Images remain in the HKU IDS WordPress Media Library, in the Panorama folder. Do not upload source videos, raw panoramas, GPX or credentials to this public repository.
 
 ## Edit and publish
 
-1. Open the configuration console. Edit picture pace/skips, section names, arrows or junction guidance and preview the result.
-2. Download **route.json to publish**. Browser edits are not automatically public.
-3. In this repository, choose **Add file → Upload files**, select the downloaded route.json, and **Commit changes** to replace the published file.
-4. Wait for the GitHub Pages deployment to complete. The visitor tour then uses the new settings. Existing browser previews can be reset to the published version after downloading a backup.
+1. Open the console and select a destination / route. Change pace, section labels, markers or junction text. The status says **Local preview** when edits are waiting to be published.
+2. Click **Download route.json to publish**. This is the full configuration. The optional settings backup is for restoring edits; it does not replace route.json.
+3. In this repository choose **Add file → Upload files**, upload the file named **route.json** to the repository root, and **Commit changes**.
+4. Open **Actions** and wait until **pages build and deployment** succeeds. Reload the visitor page or its WordPress embed. Check the **Published** date under the walking controls.
+5. Reload the console. If an older preview remains, first download its optional backup, then **Reset preview to published tour**. A stale console cannot export over a newer published revision without reloading.
 
-Only someone with repository write access can publish. Download settings is a smaller backup suitable for sharing with the assistant. New branch creation currently requires preparing footage and adding the branch topology; it is not an upload-video function in this console.
+You do not need to send a JSON file to the assistant for routine updates. GitHub does not automatically receive console edits: it is a static host, and publishing requires the repository editor's authenticated upload/commit. No GitHub token belongs in this public console.
+
+## Current routes
+
+- Exit A → IDS Office P307. Redundant P2 and P2–P3 stairs pictures are retired; the first P3 stop is the junction.
+- P2 entrance → IDS Seminar Room P603 via stairs, through P3, P4, P5 and P6.
+- P2 entrance → IDS Seminar Room P603 via the lift beside Research Sandbox P207. The lift instruction jumps from P2 to P6 without showing the waiting/riding footage.
+
+The P2 and P3 junctions have separate panorama markers. Information icons open room pages. P3 lift guidance is directions only until a route from that junction is recorded. The new indoor routes use walking-order diagrams and visually placed initial markers; GPX drift is unsuitable for precise indoor positioning.
+
+The additional 25 JPGs are 2560 × 1280, about 7.7 MB total. Their device holder is covered and other visible visitors are obscured. The viewer permits some downward looking, defaults slightly downward, and stops below the configured lower edge. User-calibrated existing placements, section labels and skipped pictures are preserved.
+
+## Adjust a branch marker
+
+Open the relevant junction in the console. Expand **Place / rotate any arrow or information marker**, choose the specific marker, drag its doorway/path beneath the crosshair, then **Place selected marker at crosshair**. Change its text, rotation or information URL, then **Save marker appearance**. Rotation turns the arrow symbol; placement moves it within the panorama. A direction label in the junction editor does not automatically move an arrow.
+
+## Add future branches
+
+Provide a 2:1 panorama video, the starting junction, destination and room-page link, floor/lift instructions, and any preferred cut points. GPX is optional indoors. The preparation workflow extracts and reviews spaced frames, removes duplicates/waiting/obstructed views, masks people/device holder, uploads only prepared JPGs to WordPress, then adds route topology and junction markers to route.json. The existing console can tune those markers once the route has been connected. It does not extract frames from an uploaded video.
+
+Use unique image filenames and original WordPress URLs. For another upload month, update only that picture/batch; the console's **Apply this folder to all pictures** intentionally replaces every image address and is only appropriate when all pictures are in that folder.
 
 ## WordPress embed
 
-Open https://hkuids.github.io/hku-ids-tour/elementor.html, copy the iframe block and paste it into a full-width Elementor HTML widget. Update the WordPress page. Later route and branch updates use the same embed address.
+Use [the Elementor block generator](https://hkuids.github.io/hku-ids-tour/elementor.html). Paste its iframe into an Elementor HTML widget. The embed URL stays unchanged when routes are added. This tour bundles Pannellum locally, with its license included.
 
-## Lift guidance and future branches
-
-At P2, on-view text directs visitors left toward P203 for the lift instead of down the stairs. **Lift directions** returns to that junction. The guide is available before lift-route panoramas are added. Its heading/instruction can be edited under **Junction name and branch choices**.
-
-For P2 to P603, provide a 360° anonymized video and GPX, timestamps for floors/junctions, destination and turn notes, and a floor plan if available. Indoor GPS can drift; align by walking order and landmarks, label estimates, reuse the shared P2/P3 corridor and connect the new continuation at the P3 junction. New prepared JPGs are uploaded to WordPress, then their URLs and calibrated markers are added here. The later P603-to-lift recording can become a separate lift route or remain text guidance.
-
-## Pictures and viewing
-
-Original JPGs are 4096 × 2048. Use their full-size WordPress addresses rather than cropped thumbnails or scaled copies. Cross-site permission was checked for the current uploaded batch. The prepared pictures cover the device holder and very bottom while retaining surrounding floor. The starting view is slightly downward, and the lower viewing limit is −55°. This is not a full audit of other people’s faces; keep unredacted originals private and review new pictures before public upload.
-
-Pannellum 2.5.7 is bundled locally under its MIT license in PANNELLUM-LICENSE.txt. No viewer CDN or Pano Mapper subscription is required.
+Deep links can start at a route/junction, for example `?route=p2-p603-lift&stop=s2-033` or `?stop=s3-003`. Add `&embed=1` for an iframe. Room links use anchors such as `#P603`; the corresponding room section IDs are installed on the WordPress premises page for automatic scrolling.

@@ -982,7 +982,7 @@
           "showLabel": false
         },
         {
-          "target": "s1-023",
+          "target": "s1-024",
           "role": "forward",
           "label": "Continue to P307",
           "yaw": 97.88077054435189,
@@ -1017,7 +1017,7 @@
       "next": "s1-025",
       "links": [
         {
-          "target": "s1-023",
+          "target": "s1-022",
           "role": "back",
           "label": "Go back",
           "yaw": -82.93052898111398,
@@ -1664,7 +1664,7 @@
           "showLabel": false
         },
         {
-          "target": "s2-001",
+          "target": "s2-003",
           "role": "forward",
           "label": "Lift to FB/F · P2",
           "yaw": -85.08647242076466,
@@ -1700,7 +1700,7 @@
       "next": "s2-004",
       "links": [
         {
-          "target": "s2-002",
+          "target": "s1-038",
           "role": "back",
           "label": "Go back",
           "yaw": -48.70428801595057,
@@ -3061,7 +3061,7 @@
       "northOffset": 182.55,
       "headingVerified": true,
       "previous": "s2-032",
-      "next": "s2-034",
+      "next": "s3-003",
       "links": [
         {
           "target": "s2-032",
@@ -3075,7 +3075,7 @@
           "showLabel": false
         },
         {
-          "target": "s2-034",
+          "target": "s3-003",
           "role": "forward",
           "label": "Continue to P307",
           "yaw": -28.917664192425264,
@@ -3134,9 +3134,10 @@
         }
       ],
       "recommended": true,
-      "protected": true,
-      "hidden": false,
-      "initialPitch": -30.722535708650295
+      "protected": false,
+      "hidden": true,
+      "initialPitch": -30.722535708650295,
+      "retired": true
     },
     {
       "id": "s2-037",
@@ -3181,7 +3182,8 @@
       ],
       "recommended": false,
       "protected": false,
-      "hidden": false
+      "hidden": true,
+      "retired": true
     },
     {
       "id": "s2-038",
@@ -3226,7 +3228,8 @@
       ],
       "recommended": true,
       "protected": false,
-      "hidden": true
+      "hidden": true,
+      "retired": true
     },
     {
       "id": "s2-040",
@@ -3270,9 +3273,10 @@
         }
       ],
       "recommended": true,
-      "protected": true,
-      "hidden": false,
-      "initialPitch": -29.02193774582257
+      "protected": false,
+      "hidden": true,
+      "initialPitch": -29.02193774582257,
+      "retired": true
     },
     {
       "id": "s3-001",
@@ -3319,9 +3323,11 @@
       ],
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
-      "protected": true,
-      "hidden": false,
-      "initialPitch": -31.25429942705309
+      "protected": false,
+      "hidden": true,
+      "initialPitch": -31.25429942705309,
+      "retired": true,
+      "indoor": true
     },
     {
       "id": "s3-003",
@@ -3338,11 +3344,11 @@
       "course": 340.45,
       "northOffset": 0,
       "headingVerified": true,
-      "previous": "s3-002",
+      "previous": "s2-033",
       "next": "s3-004",
       "links": [
         {
-          "target": "s3-002",
+          "target": "s2-033",
           "role": "back",
           "label": "Go back",
           "yaw": 160.6100161247889,
@@ -3354,7 +3360,7 @@
           "showLabel": false
         },
         {
-          "target": "s3-004",
+          "target": "s3-006",
           "role": "forward",
           "label": "Continue to P307",
           "yaw": 52.25221620218508,
@@ -3371,7 +3377,8 @@
       "protected": true,
       "hidden": false,
       "title": "Graduate House · P3 junction",
-      "initialPitch": -29.02193774582257
+      "initialPitch": -29.02193774582257,
+      "indoor": true
     },
     {
       "id": "s3-006",
@@ -3392,7 +3399,7 @@
       "next": "s3-008",
       "links": [
         {
-          "target": "s3-005",
+          "target": "s3-003",
           "role": "back",
           "label": "Go back",
           "yaw": -163.41089952124764,
@@ -3419,7 +3426,8 @@
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "indoor": true
     },
     {
       "id": "s3-008",
@@ -3452,7 +3460,7 @@
           "showLabel": false
         },
         {
-          "target": "s3-009",
+          "target": "s3-010",
           "role": "forward",
           "label": "Continue to P307",
           "yaw": 66.44381220668379,
@@ -3467,7 +3475,8 @@
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "indoor": true
     },
     {
       "id": "s3-010",
@@ -3488,7 +3497,7 @@
       "next": "s3-011",
       "links": [
         {
-          "target": "s3-009",
+          "target": "s3-008",
           "role": "back",
           "label": "Go back",
           "yaw": -164.23594291192774,
@@ -3515,7 +3524,8 @@
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": true,
-      "hidden": false
+      "hidden": false,
+      "indoor": true
     },
     {
       "id": "s3-011",
@@ -3548,7 +3558,7 @@
           "showLabel": false
         },
         {
-          "target": "s3-012",
+          "target": "s3-014",
           "role": "forward",
           "label": "Continue to P307",
           "yaw": 39.78500984236916,
@@ -3563,7 +3573,8 @@
       "directionMethod": "visual_estimate_reviewed_against_panorama",
       "recommended": true,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "indoor": true
     },
     {
       "id": "s3-014",
@@ -3584,7 +3595,7 @@
       "next": null,
       "links": [
         {
-          "target": "s3-013",
+          "target": "s3-011",
           "role": "back",
           "label": "Go back",
           "yaw": -132.11939497741628,
@@ -3600,16 +3611,1259 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "title": "HKU IDS · Office P307 entrance"
+      "title": "HKU IDS · Office P307 entrance",
+      "indoor": true,
+      "info": [
+        {
+          "id": "room-p307",
+          "label": "IDS Office P307 · room information",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P307",
+          "marker": {
+            "yaw": 30,
+            "pitch": 3,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p603-stairs-001",
+      "segment": 3,
+      "time": 30,
+      "sourceTime": 30,
+      "walkTime": 30,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P3, Graduate House",
+      "title": "Stairs from P3 toward P4",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-001.jpg",
+      "imageFilename": "hku-ids-p603-stairs-001.jpg",
+      "initialYaw": 60,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "s3-003",
+          "yaw": -170,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-002",
+          "yaw": 60,
+          "pitch": -23,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "s3-003",
+      "next": "p603-stairs-002"
+    },
+    {
+      "id": "p603-stairs-002",
+      "segment": 3,
+      "time": 36,
+      "sourceTime": 36,
+      "walkTime": 36,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P3, Graduate House",
+      "title": "Stairs from P3 toward P4",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-002.jpg",
+      "imageFilename": "hku-ids-p603-stairs-002.jpg",
+      "initialYaw": 109,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": false,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-001",
+          "yaw": -90,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-003",
+          "yaw": 109,
+          "pitch": -23,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-001",
+      "next": "p603-stairs-003"
+    },
+    {
+      "id": "p603-stairs-003",
+      "segment": 4,
+      "time": 42,
+      "sourceTime": 42,
+      "walkTime": 42,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P4, Graduate House",
+      "title": "P4 · Graduate School landing",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-003.jpg",
+      "imageFilename": "hku-ids-p603-stairs-003.jpg",
+      "initialYaw": 102,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-002",
+          "yaw": -28,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-004",
+          "yaw": 102,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-002",
+      "next": "p603-stairs-004"
+    },
+    {
+      "id": "p603-stairs-004",
+      "segment": 4,
+      "time": 50,
+      "sourceTime": 50,
+      "walkTime": 50,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P4, Graduate House",
+      "title": "P4 · beside Wang Gungwu Lecture Hall",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-004.jpg",
+      "imageFilename": "hku-ids-p603-stairs-004.jpg",
+      "initialYaw": 65,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-003",
+          "yaw": -100,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-005",
+          "yaw": 65,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-003",
+      "next": "p603-stairs-005"
+    },
+    {
+      "id": "p603-stairs-005",
+      "segment": 4,
+      "time": 58,
+      "sourceTime": 58,
+      "walkTime": 58,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P4, Graduate House",
+      "title": "P4 · continue past the lecture hall",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-005.jpg",
+      "imageFilename": "hku-ids-p603-stairs-005.jpg",
+      "initialYaw": 75,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-004",
+          "yaw": -113,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-006",
+          "yaw": 75,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-004",
+      "next": "p603-stairs-006"
+    },
+    {
+      "id": "p603-stairs-006",
+      "segment": 4,
+      "time": 64,
+      "sourceTime": 64,
+      "walkTime": 64,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P4, Graduate House",
+      "title": "P4 · approach the next staircase",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-006.jpg",
+      "imageFilename": "hku-ids-p603-stairs-006.jpg",
+      "initialYaw": 68,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-005",
+          "yaw": -109,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-007",
+          "yaw": 68,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-005",
+      "next": "p603-stairs-007"
+    },
+    {
+      "id": "p603-stairs-007",
+      "segment": 4,
+      "time": 70,
+      "sourceTime": 70,
+      "walkTime": 70,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P4, Graduate House",
+      "title": "P4 · stairs down to P5",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-007.jpg",
+      "imageFilename": "hku-ids-p603-stairs-007.jpg",
+      "initialYaw": -115,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-006",
+          "yaw": 95,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-008",
+          "yaw": -115,
+          "pitch": -23,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-006",
+      "next": "p603-stairs-008"
+    },
+    {
+      "id": "p603-stairs-008",
+      "segment": 5,
+      "time": 78,
+      "sourceTime": 78,
+      "walkTime": 78,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P5, Graduate House",
+      "title": "P5 · landing",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-008.jpg",
+      "imageFilename": "hku-ids-p603-stairs-008.jpg",
+      "initialYaw": 145,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-007",
+          "yaw": 90,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-009",
+          "yaw": 145,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-007",
+      "next": "p603-stairs-009"
+    },
+    {
+      "id": "p603-stairs-009",
+      "segment": 5,
+      "time": 86,
+      "sourceTime": 86,
+      "walkTime": 86,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P5, Graduate House",
+      "title": "P5 · stairs toward P6",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-009.jpg",
+      "imageFilename": "hku-ids-p603-stairs-009.jpg",
+      "initialYaw": 58,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-008",
+          "yaw": -72,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-010",
+          "yaw": 58,
+          "pitch": -23,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-008",
+      "next": "p603-stairs-010"
+    },
+    {
+      "id": "p603-stairs-010",
+      "segment": 6,
+      "time": 94,
+      "sourceTime": 94,
+      "walkTime": 94,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P6, Graduate House",
+      "title": "Stairs down to P6",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-010.jpg",
+      "imageFilename": "hku-ids-p603-stairs-010.jpg",
+      "initialYaw": -51,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-009",
+          "yaw": -100,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-011",
+          "yaw": -51,
+          "pitch": -23,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-009",
+      "next": "p603-stairs-011"
+    },
+    {
+      "id": "p603-stairs-011",
+      "segment": 6,
+      "time": 102,
+      "sourceTime": 102,
+      "walkTime": 102,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P6, Graduate House",
+      "title": "P6 · approach the corridor",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-011.jpg",
+      "imageFilename": "hku-ids-p603-stairs-011.jpg",
+      "initialYaw": -111,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-010",
+          "yaw": 108,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-012",
+          "yaw": -111,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-010",
+      "next": "p603-stairs-012"
+    },
+    {
+      "id": "p603-stairs-012",
+      "segment": 6,
+      "time": 108,
+      "sourceTime": 108,
+      "walkTime": 108,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P6, Graduate House",
+      "title": "P6 · corridor entrance",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-012.jpg",
+      "imageFilename": "hku-ids-p603-stairs-012.jpg",
+      "initialYaw": -111,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-011",
+          "yaw": 93,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-stairs-014",
+          "yaw": -111,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-011",
+      "next": "p603-stairs-014"
+    },
+    {
+      "id": "p603-stairs-014",
+      "segment": 6,
+      "time": 116,
+      "sourceTime": 116,
+      "walkTime": 116,
+      "sourceVideo": "p2-p603-stairs",
+      "sourceLabel": "Stairs video",
+      "floor": "P6, Graduate House",
+      "title": "IDS Seminar Room P603 · entrance",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-014.jpg",
+      "imageFilename": "hku-ids-p603-stairs-014.jpg",
+      "initialYaw": 62,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-stairs-012",
+          "yaw": 168,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-stairs-012",
+      "next": null,
+      "info": [
+        {
+          "id": "room-p603",
+          "label": "IDS Seminar Room P603 · room information",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P603",
+          "marker": {
+            "yaw": 62,
+            "pitch": 0,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p603-lift-001",
+      "segment": 2,
+      "time": 122,
+      "sourceTime": 122,
+      "walkTime": 12,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P2, Graduate House",
+      "title": "P2 · corridor toward the lift",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-001.jpg",
+      "imageFilename": "hku-ids-p603-lift-001.jpg",
+      "initialYaw": -27,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "s2-033",
+          "yaw": 147,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-002",
+          "yaw": -27,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "s2-033",
+      "next": "p603-lift-002"
+    },
+    {
+      "id": "p603-lift-002",
+      "segment": 2,
+      "time": 118,
+      "sourceTime": 118,
+      "walkTime": 16,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P2, Graduate House",
+      "title": "P2 · turn into the lift lobby",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-002.jpg",
+      "imageFilename": "hku-ids-p603-lift-002.jpg",
+      "initialYaw": -103,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-001",
+          "yaw": 156,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-003",
+          "yaw": -103,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-001",
+      "next": "p603-lift-003"
+    },
+    {
+      "id": "p603-lift-003",
+      "segment": 2,
+      "time": 114,
+      "sourceTime": 114,
+      "walkTime": 20,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P2, Graduate House",
+      "title": "P2 · lift beside Research Sandbox P207",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-003.jpg",
+      "imageFilename": "hku-ids-p603-lift-003.jpg",
+      "initialYaw": 29,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-002",
+          "yaw": -137,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-004",
+          "yaw": 29,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-002",
+      "next": "p603-lift-004",
+      "info": [
+        {
+          "id": "room-p207",
+          "label": "IDS Research Sandbox P207 · room information",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P207",
+          "marker": {
+            "yaw": 93,
+            "pitch": 3,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p603-lift-004",
+      "segment": 6,
+      "time": 42,
+      "sourceTime": 42,
+      "walkTime": 92,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · leave the lift lobby",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-004.jpg",
+      "imageFilename": "hku-ids-p603-lift-004.jpg",
+      "initialYaw": 81,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-003",
+          "yaw": -101,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-005",
+          "yaw": 81,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-003",
+      "next": "p603-lift-005"
+    },
+    {
+      "id": "p603-lift-005",
+      "segment": 6,
+      "time": 38,
+      "sourceTime": 38,
+      "walkTime": 96,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · accessible corridor",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-005.jpg",
+      "imageFilename": "hku-ids-p603-lift-005.jpg",
+      "initialYaw": 65,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-004",
+          "yaw": -115,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-006",
+          "yaw": 65,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-004",
+      "next": "p603-lift-006"
+    },
+    {
+      "id": "p603-lift-006",
+      "segment": 6,
+      "time": 34,
+      "sourceTime": 34,
+      "walkTime": 100,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · accessible corridor turn",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-006.jpg",
+      "imageFilename": "hku-ids-p603-lift-006.jpg",
+      "initialYaw": 105,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-005",
+          "yaw": -110,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-007",
+          "yaw": 105,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-005",
+      "next": "p603-lift-007"
+    },
+    {
+      "id": "p603-lift-007",
+      "segment": 6,
+      "time": 30,
+      "sourceTime": 30,
+      "walkTime": 104,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · doorway toward P603",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-007.jpg",
+      "imageFilename": "hku-ids-p603-lift-007.jpg",
+      "initialYaw": -106,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-006",
+          "yaw": 50,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-008",
+          "yaw": -106,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-006",
+      "next": "p603-lift-008"
+    },
+    {
+      "id": "p603-lift-008",
+      "segment": 6,
+      "time": 26,
+      "sourceTime": 26,
+      "walkTime": 108,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · open doorway",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-008.jpg",
+      "imageFilename": "hku-ids-p603-lift-008.jpg",
+      "initialYaw": 46,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-007",
+          "yaw": -123,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-009",
+          "yaw": 46,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-007",
+      "next": "p603-lift-009"
+    },
+    {
+      "id": "p603-lift-009",
+      "segment": 6,
+      "time": 22,
+      "sourceTime": 22,
+      "walkTime": 112,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · enter the IDS corridor",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-009.jpg",
+      "imageFilename": "hku-ids-p603-lift-009.jpg",
+      "initialYaw": 65,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-008",
+          "yaw": -97,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-010",
+          "yaw": 65,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-008",
+      "next": "p603-lift-010"
+    },
+    {
+      "id": "p603-lift-010",
+      "segment": 6,
+      "time": 18,
+      "sourceTime": 18,
+      "walkTime": 116,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · IDS corridor",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-010.jpg",
+      "imageFilename": "hku-ids-p603-lift-010.jpg",
+      "initialYaw": 83,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-009",
+          "yaw": -121,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-011",
+          "yaw": 83,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-009",
+      "next": "p603-lift-011"
+    },
+    {
+      "id": "p603-lift-011",
+      "segment": 6,
+      "time": 14,
+      "sourceTime": 14,
+      "walkTime": 120,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "P6 · seminar room corridor",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-011.jpg",
+      "imageFilename": "hku-ids-p603-lift-011.jpg",
+      "initialYaw": 21,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": false,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-010",
+          "yaw": -163,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        },
+        {
+          "role": "forward",
+          "target": "p603-lift-012",
+          "yaw": 21,
+          "pitch": -17,
+          "rotation": 0,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-010",
+      "next": "p603-lift-012"
+    },
+    {
+      "id": "p603-lift-012",
+      "segment": 6,
+      "time": 6,
+      "sourceTime": 6,
+      "walkTime": 128,
+      "sourceVideo": "p603-p2-lift",
+      "sourceLabel": "Lift video (recorded in reverse)",
+      "floor": "P6, Graduate House",
+      "title": "IDS Seminar Room P603 · entrance",
+      "indoor": true,
+      "lat": null,
+      "lon": null,
+      "quality": "indoor_landmarks_gps_unreliable",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-012.jpg",
+      "imageFilename": "hku-ids-p603-lift-012.jpg",
+      "initialYaw": 19,
+      "initialPitch": -8,
+      "headingOffset": null,
+      "course": null,
+      "northOffset": 0,
+      "headingVerified": false,
+      "recommended": true,
+      "protected": true,
+      "hidden": false,
+      "links": [
+        {
+          "role": "back",
+          "target": "p603-lift-011",
+          "yaw": -109,
+          "pitch": -18,
+          "rotation": 180,
+          "verified": false,
+          "placement": "initial_visual_estimate"
+        }
+      ],
+      "previous": "p603-lift-011",
+      "next": null,
+      "info": [
+        {
+          "id": "room-p603",
+          "label": "IDS Seminar Room P603 · room information",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P603",
+          "marker": {
+            "yaw": 19,
+            "pitch": 0,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        }
+      ]
     }
   ],
-  "schemaVersion": 4,
-  "revision": "2026-10-08T09:06:29.856Z",
+  "schemaVersion": 5,
+  "revision": "2026-10-08T10:20:22.207Z",
   "pace": "standard",
   "routes": [
     {
       "id": "exit-a-p307",
-      "name": "Exit A → IDS Office P307",
+      "name": "IDS Office P307",
       "status": "available",
       "nodeIds": [
         "s1-001",
@@ -3680,36 +4934,197 @@
         "s2-031",
         "s2-032",
         "s2-033",
-        "s2-036",
-        "s2-037",
-        "s2-038",
-        "s2-040",
-        "s3-001",
         "s3-003",
         "s3-006",
         "s3-008",
         "s3-010",
         "s3-011",
         "s3-014"
-      ]
+      ],
+      "destination": "IDS Office P307",
+      "startNodeId": "s1-001"
     },
     {
-      "id": "p2-p203",
-      "name": "IDS Research Sandbox P203",
-      "status": "planned",
-      "nodeIds": []
+      "id": "p2-p603-stairs",
+      "name": "IDS Seminar Room P603 · stairs",
+      "destination": "IDS Seminar Room P603",
+      "status": "available",
+      "startNodeId": "s2-033",
+      "nodeIds": [
+        "s1-001",
+        "s1-002",
+        "s1-003",
+        "s1-004",
+        "s1-005",
+        "s1-006",
+        "s1-007",
+        "s1-008",
+        "s1-009",
+        "s1-010",
+        "s1-011",
+        "s1-012",
+        "s1-013",
+        "s1-014",
+        "s1-015",
+        "s1-016",
+        "s1-017",
+        "s1-018",
+        "s1-019",
+        "s1-020",
+        "s1-021",
+        "s1-022",
+        "s1-024",
+        "s1-025",
+        "s1-026",
+        "s1-027",
+        "s1-028",
+        "s1-029",
+        "s1-030",
+        "s1-031",
+        "s1-032",
+        "s1-033",
+        "s1-034",
+        "s1-035",
+        "s1-036",
+        "s1-037",
+        "s1-038",
+        "s2-003",
+        "s2-004",
+        "s2-005",
+        "s2-006",
+        "s2-007",
+        "s2-008",
+        "s2-009",
+        "s2-010",
+        "s2-011",
+        "s2-012",
+        "s2-013",
+        "s2-014",
+        "s2-015",
+        "s2-016",
+        "s2-017",
+        "s2-018",
+        "s2-019",
+        "s2-020",
+        "s2-021",
+        "s2-022",
+        "s2-023",
+        "s2-024",
+        "s2-025",
+        "s2-026",
+        "s2-027",
+        "s2-028",
+        "s2-029",
+        "s2-030",
+        "s2-031",
+        "s2-032",
+        "s2-033",
+        "s3-003",
+        "p603-stairs-001",
+        "p603-stairs-002",
+        "p603-stairs-003",
+        "p603-stairs-004",
+        "p603-stairs-005",
+        "p603-stairs-006",
+        "p603-stairs-007",
+        "p603-stairs-008",
+        "p603-stairs-009",
+        "p603-stairs-010",
+        "p603-stairs-011",
+        "p603-stairs-012",
+        "p603-stairs-014"
+      ],
+      "access": "stairs"
     },
     {
-      "id": "p3-p603",
-      "name": "IDS Seminar Room P603",
-      "status": "planned",
-      "nodeIds": []
-    },
-    {
-      "id": "p3-p302",
-      "name": "IDS Innovation Hub P302",
-      "status": "planned",
-      "nodeIds": []
+      "id": "p2-p603-lift",
+      "name": "IDS Seminar Room P603 · barrier-free",
+      "destination": "IDS Seminar Room P603",
+      "status": "available",
+      "startNodeId": "s2-033",
+      "nodeIds": [
+        "s1-001",
+        "s1-002",
+        "s1-003",
+        "s1-004",
+        "s1-005",
+        "s1-006",
+        "s1-007",
+        "s1-008",
+        "s1-009",
+        "s1-010",
+        "s1-011",
+        "s1-012",
+        "s1-013",
+        "s1-014",
+        "s1-015",
+        "s1-016",
+        "s1-017",
+        "s1-018",
+        "s1-019",
+        "s1-020",
+        "s1-021",
+        "s1-022",
+        "s1-024",
+        "s1-025",
+        "s1-026",
+        "s1-027",
+        "s1-028",
+        "s1-029",
+        "s1-030",
+        "s1-031",
+        "s1-032",
+        "s1-033",
+        "s1-034",
+        "s1-035",
+        "s1-036",
+        "s1-037",
+        "s1-038",
+        "s2-003",
+        "s2-004",
+        "s2-005",
+        "s2-006",
+        "s2-007",
+        "s2-008",
+        "s2-009",
+        "s2-010",
+        "s2-011",
+        "s2-012",
+        "s2-013",
+        "s2-014",
+        "s2-015",
+        "s2-016",
+        "s2-017",
+        "s2-018",
+        "s2-019",
+        "s2-020",
+        "s2-021",
+        "s2-022",
+        "s2-023",
+        "s2-024",
+        "s2-025",
+        "s2-026",
+        "s2-027",
+        "s2-028",
+        "s2-029",
+        "s2-030",
+        "s2-031",
+        "s2-032",
+        "s2-033",
+        "p603-lift-001",
+        "p603-lift-002",
+        "p603-lift-003",
+        "p603-lift-004",
+        "p603-lift-005",
+        "p603-lift-006",
+        "p603-lift-007",
+        "p603-lift-008",
+        "p603-lift-009",
+        "p603-lift-010",
+        "p603-lift-011",
+        "p603-lift-012"
+      ],
+      "access": "lift"
     }
   ],
   "activeRoute": "exit-a-p307",
@@ -3719,23 +5134,62 @@
       "name": "P2 · Choose your destination",
       "choices": [
         {
+          "id": "p2-lift",
+          "direction": "left",
+          "label": "Barrier-free access · lift to P603",
+          "routeId": "p2-p603-lift",
+          "target": "p603-lift-001",
+          "marker": {
+            "yaw": -74,
+            "pitch": -11,
+            "rotation": 270,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        },
+        {
           "id": "sandbox",
           "direction": "left",
-          "label": "IDS Research Sandbox P203",
-          "routeId": "p2-p203"
+          "label": "IDS Research Sandbox P207",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P207",
+          "marker": {
+            "yaw": -75,
+            "pitch": 15,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
         },
         {
           "id": "other-ids",
           "direction": "downstairs",
-          "label": "Other IDS premises",
+          "label": "Other IDS premises · downstairs to P3",
           "routeId": "exit-a-p307",
-          "target": "s2-036"
+          "routeIds": [
+            "exit-a-p307",
+            "p2-p603-stairs"
+          ],
+          "target": "s3-003",
+          "useForwardMarker": true,
+          "marker": {
+            "target": "s2-034",
+            "role": "forward",
+            "label": "Continue to P307",
+            "yaw": -28.917664192425264,
+            "pitch": -21.579959522516646,
+            "verified": true,
+            "customLabel": "Downstairs to P3 / P6",
+            "rotation": 0,
+            "showLabel": true
+          }
         }
       ],
       "accessibility": {
-        "title": "P203 / lift",
-        "instruction": "Barrier-free access",
-        "note": "Lift directions only · panorama route not available."
+        "title": "Barrier-free access · turn left",
+        "instruction": "The lift is beside IDS Research Sandbox P207. For IDS Seminar Room P603, take the lift to P6.",
+        "note": "Use the left branch marker to follow the lift route."
       }
     },
     {
@@ -3743,23 +5197,68 @@
       "name": "P3 · Choose your destination",
       "choices": [
         {
-          "id": "seminar",
-          "direction": "downstairs",
-          "label": "IDS Seminar Room P603",
-          "routeId": "p3-p603"
+          "id": "p3-lift",
+          "direction": "left",
+          "label": "Barrier-free access · lift direction",
+          "action": "guidance",
+          "instruction": "Turn left toward the lift for barrier-free access. The panorama route from this P3 junction has not been recorded yet.",
+          "marker": {
+            "yaw": -102,
+            "pitch": -9,
+            "rotation": 270,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
         },
         {
           "id": "innovation",
           "direction": "left",
           "label": "IDS Innovation Hub P302",
-          "routeId": "p3-p302"
+          "url": "https://datascience.hku.hk/hku-ids-premises#P302",
+          "marker": {
+            "yaw": -93,
+            "pitch": 14,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
+        },
+        {
+          "id": "seminar",
+          "direction": "downstairs",
+          "label": "IDS Seminar Room P603 · downstairs",
+          "routeId": "p2-p603-stairs",
+          "target": "p603-stairs-001",
+          "marker": {
+            "yaw": -22,
+            "pitch": -27,
+            "rotation": 0,
+            "showLabel": true,
+            "verified": false,
+            "placement": "initial_visual_estimate"
+          }
         },
         {
           "id": "office",
           "direction": "right",
           "label": "IDS Office P307",
           "routeId": "exit-a-p307",
-          "target": "s3-006"
+          "target": "s3-006",
+          "useForwardMarker": true,
+          "marker": {
+            "target": "s3-004",
+            "role": "forward",
+            "label": "Continue to P307",
+            "yaw": 52.25221620218508,
+            "pitch": -29.02193774582257,
+            "verified": true,
+            "placement": "visual_estimate",
+            "customLabel": "",
+            "rotation": 30,
+            "showLabel": false
+          }
         }
       ]
     }
@@ -3769,9 +5268,25 @@
       "nodeId": "s1-038",
       "target": "s2-003",
       "title": "Take the lift to the footbridge",
-      "instruction": "Enter the lift and press “FB” to reach the footbridge. When you leave the lift on FB/F, continue along the footbridge toward Graduate House.",
-      "button": "I’ve reached FB · continue",
-      "type": "lift"
+      "instruction": "Reach the footbridge · click to continue",
+      "button": "Enter lift · press “FB”",
+      "type": "lift",
+      "returnButton": "Enter lift · return to G/F",
+      "returnInstruction": "Return to Main Campus · click to continue"
+    },
+    {
+      "nodeId": "p603-lift-003",
+      "target": "p603-lift-004",
+      "type": "lift",
+      "title": "Lift from P2 to P6",
+      "button": "Enter lift · select P6",
+      "instruction": "Reach P6 for IDS Seminar Room P603 · click to continue",
+      "returnButton": "Enter lift · select P2",
+      "returnInstruction": "Return to the P2 entrance · click to continue",
+      "sourceFootageOmitted": [
+        42,
+        114
+      ]
     }
   ],
   "sections": [
@@ -3789,6 +5304,21 @@
       "segment": 3,
       "heading": "P3",
       "subtitle": "Graduate House"
+    },
+    {
+      "segment": 4,
+      "heading": "P4 · through the atrium",
+      "subtitle": "Graduate House"
+    },
+    {
+      "segment": 5,
+      "heading": "P5",
+      "subtitle": "Graduate House"
+    },
+    {
+      "segment": 6,
+      "heading": "P6 · IDS Seminar Room P603",
+      "subtitle": "Graduate House"
     }
   ],
   "viewLimits": {
@@ -3800,7 +5330,16 @@
     "nadirMaskPitch": -67.5,
     "operatorMasked": true,
     "bottomMaskColor": "#66717b",
-    "otherFacesReviewed": false
+    "otherFacesReviewed": false,
+    "additionalBatches": [
+      {
+        "route": "p603",
+        "bottomMasked": true,
+        "operatorMasked": true,
+        "selectedImagesReviewed": true,
+        "otherVisitorsMasked": 3
+      }
+    ]
   },
   "imageHosting": {
     "provider": "WordPress Media Library",
@@ -3808,6 +5347,22 @@
       4096,
       2048
     ],
-    "folder": "https://datascience.hku.hk/wp-content/uploads/2026/10/"
+    "folder": "https://datascience.hku.hk/wp-content/uploads/2026/10/",
+    "additionalBatches": [
+      {
+        "route": "p603",
+        "originalSize": [
+          2560,
+          1280
+        ],
+        "count": 25,
+        "folder": "https://datascience.hku.hk/wp-content/uploads/2026/10/"
+      }
+    ]
+  },
+  "indoorCalibration": {
+    "method": "Walking order and visible P3/P4/P5/P6 signs, P207 lift lobby and P603 entrance",
+    "gpsAssessment": "Both source GPX tracks drift indoors and contain unreliable elevations. They were reviewed but not used to place indoor navigation arrows or a measured floor plan.",
+    "newMarkers": "Initial visual estimates; refine in the configuration console."
   }
 }
