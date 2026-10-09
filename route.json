@@ -3081,7 +3081,7 @@
           "yaw": -28.917664192425264,
           "pitch": -21.579959522516646,
           "verified": true,
-          "customLabel": "Downstairs to P3 / P6",
+          "customLabel": "To P3 / P6",
           "rotation": 0,
           "showLabel": true
         }
@@ -4275,8 +4275,8 @@
       "quality": "indoor_landmarks_gps_unreliable",
       "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-001.jpg",
       "imageFilename": "hku-ids-p603-lift-001.jpg",
-      "initialYaw": -27,
-      "initialPitch": -8,
+      "initialYaw": -25.63159772492793,
+      "initialPitch": -8.551454504546893,
       "headingOffset": null,
       "course": null,
       "northOffset": 0,
@@ -4288,19 +4288,21 @@
         {
           "role": "back",
           "target": "s2-033",
-          "yaw": 147,
-          "pitch": -18,
-          "rotation": 180,
-          "verified": false,
-          "placement": "initial_visual_estimate"
+          "yaw": 136.02103678682715,
+          "pitch": -26.94384884515121,
+          "rotation": 300,
+          "verified": true,
+          "placement": "initial_visual_estimate",
+          "customLabel": "",
+          "showLabel": false
         },
         {
           "role": "forward",
           "target": "p603-lift-002",
-          "yaw": -27,
-          "pitch": -17,
+          "yaw": -14.342051737004454,
+          "pitch": -17.94552005759384,
           "rotation": 0,
-          "verified": false,
+          "verified": true,
           "placement": "initial_visual_estimate"
         }
       ],
@@ -4336,10 +4338,10 @@
         {
           "role": "back",
           "target": "p603-lift-001",
-          "yaw": 156,
-          "pitch": -18,
+          "yaw": 159.31855471396648,
+          "pitch": -21.16121615298905,
           "rotation": 180,
-          "verified": false,
+          "verified": true,
           "placement": "initial_visual_estimate"
         },
         {
@@ -4858,7 +4860,7 @@
     }
   ],
   "schemaVersion": 5,
-  "revision": "2026-10-08T10:42:05.360Z",
+  "revision": "2026-10-09T10:28:25.910Z",
   "pace": "standard",
   "routes": [
     {
@@ -5131,34 +5133,35 @@
   "junctions": [
     {
       "nodeId": "s2-033",
-      "name": "P2 · Choose your destination",
+      "name": "P2 Entryway",
       "choices": [
         {
           "id": "p2-lift",
           "direction": "left",
-          "label": "Barrier-free access · lift to P603",
+          "label": "♿️ Barrier-free access on your left",
           "routeId": "p2-p603-lift",
           "target": "p603-lift-001",
           "marker": {
-            "yaw": -74,
-            "pitch": -11,
+            "yaw": -53.793052515481065,
+            "pitch": -19.632418310837593,
             "rotation": 270,
             "showLabel": true,
-            "verified": false,
-            "placement": "initial_visual_estimate"
+            "verified": true,
+            "placement": "initial_visual_estimate",
+            "customLabel": "To P203 / lift"
           }
         },
         {
           "id": "sandbox",
           "direction": "left",
-          "label": "IDS Research Sandbox P207",
-          "url": "https://datascience.hku.hk/hku-ids-premises#P207",
+          "label": "IDS Research Sandbox P203",
+          "url": "https://datascience.hku.hk/hku-ids-premises#P203",
           "marker": {
-            "yaw": -75,
-            "pitch": 15,
+            "yaw": -59.7959952325823,
+            "pitch": -12.68041657761103,
             "rotation": 0,
             "showLabel": true,
-            "verified": false,
+            "verified": true,
             "placement": "initial_visual_estimate"
           }
         },
@@ -5187,8 +5190,8 @@
         }
       ],
       "accessibility": {
-        "title": "Barrier-free access · turn left",
-        "instruction": "The lift is beside IDS Research Sandbox P207. For IDS Seminar Room P603, take the lift to P6.",
+        "title": "Turn left for barrier-free access",
+        "instruction": "IDS Research Sandbox P203 and the left are adjacent to each other.\nFor IDS office P307 or IDS Innovation Hub P302, take the lift to P3.\nFor IDS Seminar Room P603, take the lift to P6.",
         "note": "Use the left branch marker to follow the lift route."
       }
     },
@@ -5297,7 +5300,7 @@
     },
     {
       "segment": 2,
-      "heading": "Footbridge & P2 Entrance, Graduate House",
+      "heading": "Footbridge to Graduate House",
       "subtitle": "Main Campus"
     },
     {
