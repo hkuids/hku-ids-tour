@@ -2906,7 +2906,11 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "initialPitch": -17.062078486089938
+      "initialPitch": -17.062078486089938,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-030",
@@ -2952,7 +2956,11 @@
       "recommended": false,
       "protected": false,
       "hidden": true,
-      "skipReason": "Large blurred area; omitted at the owner’s request."
+      "skipReason": "Large blurred area; omitted at the owner’s request.",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-031",
@@ -2998,7 +3006,11 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "initialPitch": -19.906348183547188
+      "initialPitch": -19.906348183547188,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-032",
@@ -3043,7 +3055,11 @@
       ],
       "recommended": false,
       "protected": false,
-      "hidden": false
+      "hidden": false,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-033",
@@ -3090,7 +3106,11 @@
       "protected": true,
       "hidden": false,
       "title": "Graduate House · P2 junction",
-      "initialPitch": -7.237682319765263
+      "initialPitch": -7.237682319765263,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-036",
@@ -3137,7 +3157,11 @@
       "protected": false,
       "hidden": true,
       "initialPitch": -30.722535708650295,
-      "retired": true
+      "retired": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-037",
@@ -3183,7 +3207,11 @@
       "recommended": false,
       "protected": false,
       "hidden": true,
-      "retired": true
+      "retired": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-038",
@@ -3229,7 +3257,11 @@
       "recommended": true,
       "protected": false,
       "hidden": true,
-      "retired": true
+      "retired": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s2-040",
@@ -3276,7 +3308,11 @@
       "protected": false,
       "hidden": true,
       "initialPitch": -29.02193774582257,
-      "retired": true
+      "retired": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-001",
@@ -3327,7 +3363,11 @@
       "hidden": true,
       "initialPitch": -31.25429942705309,
       "retired": true,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-003",
@@ -3378,7 +3418,11 @@
       "hidden": false,
       "title": "Graduate House · P3 junction",
       "initialPitch": -29.02193774582257,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-006",
@@ -3427,7 +3471,11 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-008",
@@ -3476,7 +3524,11 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-010",
@@ -3525,7 +3577,11 @@
       "recommended": true,
       "protected": true,
       "hidden": false,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-011",
@@ -3574,7 +3630,11 @@
       "recommended": true,
       "protected": false,
       "hidden": false,
-      "indoor": true
+      "indoor": true,
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "s3-014",
@@ -3627,7 +3687,11 @@
             "placement": "initial_visual_estimate"
           }
         }
-      ]
+      ],
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-001",
@@ -3643,8 +3707,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-001.jpg",
-      "imageFilename": "hku-ids-p603-stairs-001.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-001-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-001-floor-v2.jpg",
       "initialYaw": 60,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3675,7 +3739,11 @@
         }
       ],
       "previous": "s3-003",
-      "next": "p603-stairs-002"
+      "next": "p603-stairs-002",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-002",
@@ -3691,8 +3759,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-002.jpg",
-      "imageFilename": "hku-ids-p603-stairs-002.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-002-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-002-floor-v2.jpg",
       "initialYaw": 109,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3723,7 +3791,11 @@
         }
       ],
       "previous": "p603-stairs-001",
-      "next": "p603-stairs-003"
+      "next": "p603-stairs-003",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-003",
@@ -3739,8 +3811,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-003.jpg",
-      "imageFilename": "hku-ids-p603-stairs-003.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-003-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-003-floor-v2.jpg",
       "initialYaw": 102,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3771,7 +3843,11 @@
         }
       ],
       "previous": "p603-stairs-002",
-      "next": "p603-stairs-004"
+      "next": "p603-stairs-004",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-004",
@@ -3787,8 +3863,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-004.jpg",
-      "imageFilename": "hku-ids-p603-stairs-004.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-004-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-004-floor-v2.jpg",
       "initialYaw": 65,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3819,7 +3895,11 @@
         }
       ],
       "previous": "p603-stairs-003",
-      "next": "p603-stairs-005"
+      "next": "p603-stairs-005",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-005",
@@ -3835,8 +3915,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-005.jpg",
-      "imageFilename": "hku-ids-p603-stairs-005.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-005-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-005-floor-v2.jpg",
       "initialYaw": 75,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3867,7 +3947,11 @@
         }
       ],
       "previous": "p603-stairs-004",
-      "next": "p603-stairs-006"
+      "next": "p603-stairs-006",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-006",
@@ -3883,8 +3967,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-006.jpg",
-      "imageFilename": "hku-ids-p603-stairs-006.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-006-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-006-floor-v2.jpg",
       "initialYaw": 68,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3915,7 +3999,11 @@
         }
       ],
       "previous": "p603-stairs-005",
-      "next": "p603-stairs-007"
+      "next": "p603-stairs-007",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-007",
@@ -3931,8 +4019,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-007.jpg",
-      "imageFilename": "hku-ids-p603-stairs-007.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-007-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-007-floor-v2.jpg",
       "initialYaw": -115,
       "initialPitch": -8,
       "headingOffset": null,
@@ -3963,7 +4051,11 @@
         }
       ],
       "previous": "p603-stairs-006",
-      "next": "p603-stairs-008"
+      "next": "p603-stairs-008",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-008",
@@ -3979,8 +4071,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-008.jpg",
-      "imageFilename": "hku-ids-p603-stairs-008.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-008-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-008-floor-v2.jpg",
       "initialYaw": 145,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4011,7 +4103,11 @@
         }
       ],
       "previous": "p603-stairs-007",
-      "next": "p603-stairs-009"
+      "next": "p603-stairs-009",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-009",
@@ -4027,8 +4123,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-009.jpg",
-      "imageFilename": "hku-ids-p603-stairs-009.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-009-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-009-floor-v2.jpg",
       "initialYaw": 58,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4059,7 +4155,11 @@
         }
       ],
       "previous": "p603-stairs-008",
-      "next": "p603-stairs-010"
+      "next": "p603-stairs-010",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-010",
@@ -4075,8 +4175,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-010.jpg",
-      "imageFilename": "hku-ids-p603-stairs-010.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-010-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-010-floor-v2.jpg",
       "initialYaw": -51,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4107,7 +4207,11 @@
         }
       ],
       "previous": "p603-stairs-009",
-      "next": "p603-stairs-011"
+      "next": "p603-stairs-011",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-011",
@@ -4123,8 +4227,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-011.jpg",
-      "imageFilename": "hku-ids-p603-stairs-011.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-011-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-011-floor-v2.jpg",
       "initialYaw": -111,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4155,7 +4259,11 @@
         }
       ],
       "previous": "p603-stairs-010",
-      "next": "p603-stairs-012"
+      "next": "p603-stairs-012",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-012",
@@ -4171,8 +4279,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-012.jpg",
-      "imageFilename": "hku-ids-p603-stairs-012.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-012-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-012-floor-v2.jpg",
       "initialYaw": -111,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4203,7 +4311,11 @@
         }
       ],
       "previous": "p603-stairs-011",
-      "next": "p603-stairs-014"
+      "next": "p603-stairs-014",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-stairs-014",
@@ -4219,8 +4331,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-stairs-014.jpg",
-      "imageFilename": "hku-ids-p603-stairs-014.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-stairs-014-floor-v2.jpg",
+      "imageFilename": "hku-ids-stairs-014-floor-v2.jpg",
       "initialYaw": 62,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4257,7 +4369,11 @@
             "placement": "initial_visual_estimate"
           }
         }
-      ]
+      ],
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-001",
@@ -4273,8 +4389,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-001.jpg",
-      "imageFilename": "hku-ids-p603-lift-001.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-001-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-001-floor-v2.jpg",
       "initialYaw": -25.63159772492793,
       "initialPitch": -8.551454504546893,
       "headingOffset": null,
@@ -4307,7 +4423,11 @@
         }
       ],
       "previous": "s2-033",
-      "next": "p603-lift-002"
+      "next": "p603-lift-002",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-002",
@@ -4323,8 +4443,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-002.jpg",
-      "imageFilename": "hku-ids-p603-lift-002.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-002-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-002-floor-v2.jpg",
       "initialYaw": -103,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4355,7 +4475,11 @@
         }
       ],
       "previous": "p603-lift-001",
-      "next": "p603-lift-003"
+      "next": "p603-lift-003",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-003",
@@ -4366,13 +4490,13 @@
       "sourceVideo": "p603-p2-lift",
       "sourceLabel": "Lift video (recorded in reverse)",
       "floor": "P2, Graduate House",
-      "title": "P2 · lift beside Research Sandbox P207",
+      "title": "P2 · lift lobby",
       "indoor": true,
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-003.jpg",
-      "imageFilename": "hku-ids-p603-lift-003.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-003-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-003-floor-v2.jpg",
       "initialYaw": 29,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4404,21 +4528,10 @@
       ],
       "previous": "p603-lift-002",
       "next": "p603-lift-004",
-      "info": [
-        {
-          "id": "room-p207",
-          "label": "IDS Research Sandbox P207 · room information",
-          "url": "https://datascience.hku.hk/hku-ids-premises#P207",
-          "marker": {
-            "yaw": 93,
-            "pitch": 3,
-            "rotation": 0,
-            "showLabel": true,
-            "verified": false,
-            "placement": "initial_visual_estimate"
-          }
-        }
-      ]
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-004",
@@ -4434,8 +4547,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-004.jpg",
-      "imageFilename": "hku-ids-p603-lift-004.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-004-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-004-floor-v2.jpg",
       "initialYaw": 81,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4466,7 +4579,11 @@
         }
       ],
       "previous": "p603-lift-003",
-      "next": "p603-lift-005"
+      "next": "p603-lift-005",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-005",
@@ -4482,8 +4599,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-005.jpg",
-      "imageFilename": "hku-ids-p603-lift-005.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-005-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-005-floor-v2.jpg",
       "initialYaw": 65,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4514,7 +4631,11 @@
         }
       ],
       "previous": "p603-lift-004",
-      "next": "p603-lift-006"
+      "next": "p603-lift-006",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-006",
@@ -4530,8 +4651,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-006.jpg",
-      "imageFilename": "hku-ids-p603-lift-006.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-006-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-006-floor-v2.jpg",
       "initialYaw": 105,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4562,7 +4683,11 @@
         }
       ],
       "previous": "p603-lift-005",
-      "next": "p603-lift-007"
+      "next": "p603-lift-007",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-007",
@@ -4578,8 +4703,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-007.jpg",
-      "imageFilename": "hku-ids-p603-lift-007.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-007-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-007-floor-v2.jpg",
       "initialYaw": -106,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4610,7 +4735,11 @@
         }
       ],
       "previous": "p603-lift-006",
-      "next": "p603-lift-008"
+      "next": "p603-lift-008",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-008",
@@ -4626,8 +4755,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-008.jpg",
-      "imageFilename": "hku-ids-p603-lift-008.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-008-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-008-floor-v2.jpg",
       "initialYaw": 46,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4658,7 +4787,11 @@
         }
       ],
       "previous": "p603-lift-007",
-      "next": "p603-lift-009"
+      "next": "p603-lift-009",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-009",
@@ -4674,8 +4807,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-009.jpg",
-      "imageFilename": "hku-ids-p603-lift-009.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-009-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-009-floor-v2.jpg",
       "initialYaw": 65,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4706,7 +4839,11 @@
         }
       ],
       "previous": "p603-lift-008",
-      "next": "p603-lift-010"
+      "next": "p603-lift-010",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-010",
@@ -4722,8 +4859,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-010.jpg",
-      "imageFilename": "hku-ids-p603-lift-010.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-010-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-010-floor-v2.jpg",
       "initialYaw": 83,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4754,7 +4891,11 @@
         }
       ],
       "previous": "p603-lift-009",
-      "next": "p603-lift-011"
+      "next": "p603-lift-011",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-011",
@@ -4770,8 +4911,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-011.jpg",
-      "imageFilename": "hku-ids-p603-lift-011.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-011-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-011-floor-v2.jpg",
       "initialYaw": 21,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4802,7 +4943,11 @@
         }
       ],
       "previous": "p603-lift-010",
-      "next": "p603-lift-012"
+      "next": "p603-lift-012",
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     },
     {
       "id": "p603-lift-012",
@@ -4818,8 +4963,8 @@
       "lat": null,
       "lon": null,
       "quality": "indoor_landmarks_gps_unreliable",
-      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-p603-lift-012.jpg",
-      "imageFilename": "hku-ids-p603-lift-012.jpg",
+      "image": "https://datascience.hku.hk/wp-content/uploads/2026/10/hku-ids-lift-012-floor-v2.jpg",
+      "imageFilename": "hku-ids-lift-012-floor-v2.jpg",
       "initialYaw": 19,
       "initialPitch": -8,
       "headingOffset": null,
@@ -4856,11 +5001,15 @@
             "placement": "initial_visual_estimate"
           }
         }
-      ]
+      ],
+      "viewLimits": {
+        "minPitch": -65,
+        "maxPitch": 90
+      }
     }
   ],
-  "schemaVersion": 5,
-  "revision": "2026-10-09T10:28:25.910Z",
+  "schemaVersion": 6,
+  "revision": "2026-10-10T03:25:07.127Z",
   "pace": "standard",
   "routes": [
     {
@@ -5149,13 +5298,14 @@
             "verified": true,
             "placement": "initial_visual_estimate",
             "customLabel": "To P203 / lift"
-          }
+          },
+          "showCard": true,
+          "showDescription": true
         },
         {
           "id": "sandbox",
           "direction": "left",
           "label": "IDS Research Sandbox P203",
-          "url": "https://datascience.hku.hk/hku-ids-premises#P203",
           "marker": {
             "yaw": -59.7959952325823,
             "pitch": -12.68041657761103,
@@ -5163,7 +5313,11 @@
             "showLabel": true,
             "verified": true,
             "placement": "initial_visual_estimate"
-          }
+          },
+          "status": "coming-soon",
+          "action": "planned",
+          "showCard": true,
+          "showDescription": true
         },
         {
           "id": "other-ids",
@@ -5186,12 +5340,14 @@
             "customLabel": "Downstairs to P3 / P6",
             "rotation": 0,
             "showLabel": true
-          }
+          },
+          "showCard": true,
+          "showDescription": true
         }
       ],
       "accessibility": {
         "title": "Turn left for barrier-free access",
-        "instruction": "IDS Research Sandbox P203 and the left are adjacent to each other.\nFor IDS office P307 or IDS Innovation Hub P302, take the lift to P3.\nFor IDS Seminar Room P603, take the lift to P6.",
+        "instruction": "Turn left for the lift. Select P3 for P302 / P307, or P6 for P603.",
         "note": "Use the left branch marker to follow the lift route."
       }
     },
@@ -5203,7 +5359,7 @@
           "id": "p3-lift",
           "direction": "left",
           "label": "Barrier-free access · lift direction",
-          "action": "guidance",
+          "action": "planned",
           "instruction": "Turn left toward the lift for barrier-free access. The panorama route from this P3 junction has not been recorded yet.",
           "marker": {
             "yaw": -102,
@@ -5212,13 +5368,15 @@
             "showLabel": true,
             "verified": false,
             "placement": "initial_visual_estimate"
-          }
+          },
+          "status": "coming-soon",
+          "showCard": true,
+          "showDescription": true
         },
         {
           "id": "innovation",
           "direction": "left",
           "label": "IDS Innovation Hub P302",
-          "url": "https://datascience.hku.hk/hku-ids-premises#P302",
           "marker": {
             "yaw": -93,
             "pitch": 14,
@@ -5226,7 +5384,11 @@
             "showLabel": true,
             "verified": false,
             "placement": "initial_visual_estimate"
-          }
+          },
+          "status": "coming-soon",
+          "action": "planned",
+          "showCard": true,
+          "showDescription": true
         },
         {
           "id": "seminar",
@@ -5241,7 +5403,9 @@
             "showLabel": true,
             "verified": false,
             "placement": "initial_visual_estimate"
-          }
+          },
+          "showCard": true,
+          "showDescription": true
         },
         {
           "id": "office",
@@ -5261,7 +5425,9 @@
             "customLabel": "",
             "rotation": 30,
             "showLabel": false
-          }
+          },
+          "showCard": true,
+          "showDescription": true
         }
       ]
     }
@@ -5271,25 +5437,29 @@
       "nodeId": "s1-038",
       "target": "s2-003",
       "title": "Take the lift to the footbridge",
-      "instruction": "Reach the footbridge · click to continue",
+      "instruction": "Enter the lift and press FB.",
       "button": "Enter lift · press “FB”",
       "type": "lift",
       "returnButton": "Enter lift · return to G/F",
-      "returnInstruction": "Return to Main Campus · click to continue"
+      "returnInstruction": "Enter the lift and press G/F.",
+      "buttonShape": "round",
+      "returnTitle": "Return to Main Campus"
     },
     {
       "nodeId": "p603-lift-003",
       "target": "p603-lift-004",
       "type": "lift",
-      "title": "Lift from P2 to P6",
+      "title": "Take the lift to P6",
       "button": "Enter lift · select P6",
-      "instruction": "Reach P6 for IDS Seminar Room P603 · click to continue",
+      "instruction": "Enter the lift and press P6.",
       "returnButton": "Enter lift · select P2",
-      "returnInstruction": "Return to the P2 entrance · click to continue",
+      "returnInstruction": "Enter the lift and press P2.",
       "sourceFootageOmitted": [
         42,
         114
-      ]
+      ],
+      "buttonShape": "rounded-square",
+      "returnTitle": "Return to the P2 entrance"
     }
   ],
   "sections": [
@@ -5367,5 +5537,18 @@
     "method": "Walking order and visible P3/P4/P5/P6 signs, P207 lift lobby and P603 entrance",
     "gpsAssessment": "Both source GPX tracks drift indoors and contain unreliable elevations. They were reviewed but not used to place indoor navigation arrows or a measured floor plan.",
     "newMarkers": "Initial visual estimates; refine in the configuration console."
+  },
+  "ui": {
+    "locationLabel": true,
+    "navigation": true,
+    "progress": true,
+    "descriptions": true,
+    "junctionCards": true,
+    "liftCards": true,
+    "arrows": true,
+    "infoIcons": true,
+    "hints": false,
+    "arrival": true,
+    "arrowStyle": "chevron"
   }
 }
